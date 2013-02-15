@@ -1,2 +1,7 @@
 2/14 02:53 AM
 Created the initial project and set up git repository
+
+2/15 02:04 AM
+Set up main view with buttons for Searching the DB and going to my armory. Also implemented the onclick methods to go to a new activity
+
+
