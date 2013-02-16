@@ -1,7 +1,8 @@
 2/14 02:53 AM
-Created the initial project and set up git repository
+-Created the initial project and set up git repository
 
 2/15 02:04 AM
-Set up main view with buttons for Searching the DB and going to my armory. Also implemented the onclick methods to go to a new activity
+-Set up main view with buttons for Searching the DB and going to my armory. Also implemented the onclick methods to go to a new activity
 
-
+2/16 
+-Added gray scales background image and made buttons on the main activity white iand translucent instead of tranparent. Also rounded the button edges and spaced them appropriately on the main activity

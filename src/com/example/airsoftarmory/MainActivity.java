@@ -30,6 +30,12 @@ public class MainActivity extends Activity {
         }
 */        
 		setContentView(R.layout.activity_main);
+		
+		View button1 = this.findViewById(R.id.search_button);
+		button1.getBackground().setAlpha(150);
+		
+		View button2 = this.findViewById(R.id.myarmory_button);
+		button2.getBackground().setAlpha(150);
 	}
 	
 	@Override
