@@ -25,7 +25,7 @@
         android:layout_width="match_parent"
         android:layout_marginTop="75dp"
         android:text="@string/myarmory_button" 
-        android:onClick="goToMainSearch"
+        android:onClick="goToMyArmory"
 		android:background="@drawable/buttons"/>
     
 </LinearLayout>

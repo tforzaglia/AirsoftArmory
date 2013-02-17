@@ -30,6 +30,54 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.airsoftarmory.MainActivity" />
         </activity>
+        <activity
+            android:name="com.example.airsoftarmory.BrandActivity"
+            android:label="@string/title_activity_brand"
+            android:parentActivityName="com.example.airsoftarmory.MainSearchActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.airsoftarmory.MainSearchActivity" />
+        </activity>
+        <activity
+            android:name="com.example.airsoftarmory.MyArmoryActivity"
+            android:label="@string/title_activity_my_armory"
+            android:parentActivityName="com.example.airsoftarmory.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.airsoftarmory.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.airsoftarmory.TypeActivity"
+            android:label="@string/title_activity_type"
+            android:parentActivityName="com.example.airsoftarmory.MainSearchActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.airsoftarmory.MainSearchActivity" />
+        </activity>
+        <activity
+            android:name="com.example.airsoftarmory.PropulsionActivity"
+            android:label="@string/title_activity_propulsion"
+            android:parentActivityName="com.example.airsoftarmory.MainSearchActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.airsoftarmory.MainSearchActivity" />
+        </activity>
+        <activity
+            android:name="com.example.airsoftarmory.FpsActivity"
+            android:label="@string/title_activity_fps"
+            android:parentActivityName="com.example.airsoftarmory.MainSearchActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.airsoftarmory.MainSearchActivity" />
+        </activity>
+        <activity
+            android:name="com.example.airsoftarmory.CustomActivity"
+            android:label="@string/title_activity_custom"
+            android:parentActivityName="com.example.airsoftarmory.MainSearchActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.airsoftarmory.MainSearchActivity" />
+        </activity>
     </application>
 
 </manifest>

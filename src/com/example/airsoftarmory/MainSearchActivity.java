@@ -2,8 +2,10 @@ package com.example.airsoftarmory;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.content.Intent;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.support.v4.app.NavUtils;
 
 public class MainSearchActivity extends Activity {
@@ -12,8 +14,21 @@ public class MainSearchActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main_search);
-		// Show the Up button in the action bar.
-		getActionBar().setDisplayHomeAsUpEnabled(true);
+		
+		View button1 = this.findViewById(R.id.brand_button);
+		button1.getBackground().setAlpha(190);
+		
+		View button2 = this.findViewById(R.id.type_button);
+		button2.getBackground().setAlpha(190);
+		
+		View button3 = this.findViewById(R.id.propulsion_button);
+		button3.getBackground().setAlpha(190);
+		
+		View button4 = this.findViewById(R.id.fps_button);
+		button4.getBackground().setAlpha(190);
+		
+		View button5 = this.findViewById(R.id.custom_button);
+		button5.getBackground().setAlpha(190);
 	}
 
 	@Override
@@ -22,7 +37,47 @@ public class MainSearchActivity extends Activity {
 		getMenuInflater().inflate(R.menu.activity_main_search, menu);
 		return true;
 	}
-
+	
+	//View parameter is the view that was clicked
+	public void goToBrandSearch(View view) {
+			
+		//respond to button press
+		Intent intent = new Intent(this, BrandActivity.class);
+		startActivity(intent);
+	}
+	
+	//View parameter is the view that was clicked
+	public void goToTypeSearch(View view) {
+				
+		//respond to button press
+		Intent intent = new Intent(this, TypeActivity.class);
+		startActivity(intent);
+	}
+	
+	//View parameter is the view that was clicked
+	public void goToPropulsionSearch(View view) {
+					
+		//respond to button press
+		Intent intent = new Intent(this, PropulsionActivity.class);
+		startActivity(intent);
+	}
+		
+	//View parameter is the view that was clicked
+	public void goToFpsSearch(View view) {
+					
+		//respond to button press
+		Intent intent = new Intent(this, FpsActivity.class);
+		startActivity(intent);
+	}
+		
+	//View parameter is the view that was clicked
+	public void goToCustomSearch(View view) {
+					
+		//respond to button press
+		Intent intent = new Intent(this, CustomActivity.class);
+		startActivity(intent);
+	}
+	
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 		switch (item.getItemId()) {

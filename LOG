@@ -4,5 +4,11 @@
 2/15 02:04 AM
 -Set up main view with buttons for Searching the DB and going to my armory. Also implemented the onclick methods to go to a new activity
 
-2/16 
+2/16 1:44 AM
 -Added gray scales background image and made buttons on the main activity white iand translucent instead of tranparent. Also rounded the button edges and spaced them appropriately on the main activity
+
+2/17 12:08
+-Added buttons to the Main Search activity (brand, type, fps, etc)
+-Created the activities for all of the search options.
+
+

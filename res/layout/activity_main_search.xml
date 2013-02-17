@@ -1,14 +1,58 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainSearchActivity" >
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:text="@string/hello_world" />
-
-</RelativeLayout>
+    android:orientation="vertical" 
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="25dp"
+    android:paddingBottom="16dp"
+    android:background="@drawable/background">
+    
+    <Button
+        android:id="@+id/brand_button"
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:text="@string/brand_button" 
+        android:onClick="goToBrandSearch" 
+        android:background="@drawable/buttons"/>
+        
+    <Button
+        android:id="@+id/type_button"
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="50dp"
+        android:text="@string/type_button" 
+        android:onClick="goToTypeSearch"
+		android:background="@drawable/buttons"/>
+    
+    <Button
+        android:id="@+id/propulsion_button"
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="50dp"
+        android:text="@string/propulsion_button" 
+        android:onClick="goToPropulsionSearch"
+		android:background="@drawable/buttons"/>
+    
+    <Button
+        android:id="@+id/fps_button"
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="50dp"
+        android:text="@string/fps_button" 
+        android:onClick="goToFpsSearch"
+		android:background="@drawable/buttons"/>
+    
+    <Button
+        android:id="@+id/custom_button"
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="50dp"
+        android:text="@string/custom_button" 
+        android:onClick="goToCustomSearch"
+		android:background="@drawable/buttons"/>
+    
+</LinearLayout>

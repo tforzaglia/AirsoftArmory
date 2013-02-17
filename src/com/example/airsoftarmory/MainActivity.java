@@ -32,10 +32,10 @@ public class MainActivity extends Activity {
 		setContentView(R.layout.activity_main);
 		
 		View button1 = this.findViewById(R.id.search_button);
-		button1.getBackground().setAlpha(150);
+		button1.getBackground().setAlpha(190);
 		
 		View button2 = this.findViewById(R.id.myarmory_button);
-		button2.getBackground().setAlpha(150);
+		button2.getBackground().setAlpha(190);
 	}
 	
 	@Override
@@ -51,6 +51,14 @@ public class MainActivity extends Activity {
 		
 		//respond to button press
 		Intent intent = new Intent(this, MainSearchActivity.class);
+		startActivity(intent);
+	}
+	
+	//View parameter is the view that was clicked
+	public void goToMyArmory(View view) {
+					
+		//respond to button press
+		Intent intent = new Intent(this, MyArmoryActivity.class);
 		startActivity(intent);
 	}
 	
