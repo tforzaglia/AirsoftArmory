@@ -12,7 +12,6 @@ public class BrandActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_brand);
-		setTitle("Select a Brand");
 	}
 
 	@Override

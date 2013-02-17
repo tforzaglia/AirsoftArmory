@@ -12,11 +12,11 @@
     <string name="custom_button">[Custom]</string>
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_main_search">Press a button to search</string>
-    <string name="title_activity_brand">BrandActivity</string>
-    <string name="title_activity_my_armory">MyArmoryActivity</string>
-    <string name="title_activity_type">TypeActivity</string>
-    <string name="title_activity_propulsion">PropulsionActivity</string>
-    <string name="title_activity_fps">FpsActivity</string>
-    <string name="title_activity_custom">CustomActivity</string>
+    <string name="title_activity_brand">Select a Brand</string>
+    <string name="title_activity_my_armory">My Armory</string>
+    <string name="title_activity_type">Select a Gun Type</string>
+    <string name="title_activity_propulsion">Select a Propulsion Type</string>
+    <string name="title_activity_fps">Select an FPS Range</string>
+    <string name="title_activity_custom">Custom Search</string>
 
 </resources>

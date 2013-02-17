@@ -12,7 +12,6 @@ public class TypeActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_type);
-		setTitle("Select a Gun Type");
 	}
 
 	@Override

@@ -12,7 +12,6 @@ public class CustomActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_custom);
-		setTitle("Custom Search");
 	}
 
 	@Override

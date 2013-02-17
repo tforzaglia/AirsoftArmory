@@ -12,7 +12,6 @@ public class PropulsionActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_propulsion);
-		setTitle("Select a Propulsion Type");
 	}
 
 	@Override
