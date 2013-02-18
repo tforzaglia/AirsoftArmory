@@ -1,14 +1,217 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".BrandActivity" >
+<?xml version="1.0" encoding="utf-8"?>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:text="@string/hello_world" />
-
-</RelativeLayout>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    	xmlns:tools="http://schemas.android.com/tools"
+    	android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:orientation="vertical" 
+    	android:paddingLeft="16dp"
+    	android:paddingRight="16dp"
+    	android:paddingTop="25dp"
+    	android:paddingBottom="16dp"
+    	android:background="@drawable/background">
+    
+    	<Button
+        	android:id="@+id/aandk_button"
+        	android:layout_height="50dp"
+        	android:layout_width="match_parent"
+        	android:text="@string/aandk_button" 
+        	android:onClick="goToAandk" 
+        	android:background="@drawable/buttons"/>
+        
+    	<Button
+        	android:id="@+id/aps_button"
+        	android:layout_height="50dp"
+        	android:layout_width="match_parent"
+        	android:layout_marginTop="25dp"
+        	android:text="@string/aps_button" 
+        	android:onClick="goToAps"
+			android:background="@drawable/buttons"/>
+    
+    	<Button
+        	android:id="@+id/ares_button"
+        	android:layout_height="50dp"
+        	android:layout_width="match_parent"
+        	android:layout_marginTop="25dp"
+        	android:text="@string/ares_button" 
+        	android:onClick="goToAres"
+			android:background="@drawable/buttons"/>
+    	
+    	<Button
+        	android:id="@+id/cyma_button"
+        	android:layout_height="50dp"
+        	android:layout_width="match_parent"
+        	android:layout_marginTop="25dp"
+        	android:text="@string/cyma_button" 
+        	android:onClick="goToCyma"
+			android:background="@drawable/buttons"/>
+    	
+    	<Button
+        	android:id="@+id/classicarmy_button"
+        	android:layout_height="50dp"
+        	android:layout_width="match_parent"
+        	android:layout_marginTop="25dp"
+        	android:text="@string/classicarmy_button" 
+        	android:onClick="goToClassicarmy"
+			android:background="@drawable/buttons"/>
+    	
+    	<Button
+        	android:id="@+id/dboys_button"
+        	android:layout_height="50dp"
+        	android:layout_width="match_parent"
+        	android:layout_marginTop="25dp"
+        	android:text="@string/dboys_button" 
+        	android:onClick="goToDboys"
+			android:background="@drawable/buttons"/>
+    	
+    	<Button
+        	android:id="@+id/echo1_button"
+        	android:layout_height="50dp"
+        	android:layout_width="match_parent"
+        	android:layout_marginTop="25dp"
+        	android:text="@string/echo1_button" 
+        	android:onClick="goToEcho1"
+			android:background="@drawable/buttons"/>
+    	
+    	<Button
+        	android:id="@+id/gandg_button"
+        	android:layout_height="50dp"
+        	android:layout_width="match_parent"
+        	android:layout_marginTop="25dp"
+        	android:text="@string/gandg_button" 
+        	android:onClick="goToGandg"
+			android:background="@drawable/buttons"/>
+    	
+    	<Button
+        	android:id="@+id/gandp_button"
+        	android:layout_height="50dp"
+        	android:layout_width="match_parent"
+        	android:layout_marginTop="25dp"
+        	android:text="@string/gandp_button" 
+        	android:onClick="goToGandp"
+			android:background="@drawable/buttons"/>
+    	
+    	<Button
+        	android:id="@+id/ics_button"
+        	android:layout_height="50dp"
+        	android:layout_width="match_parent"
+        	android:layout_marginTop="25dp"
+        	android:text="@string/ics_button" 
+        	android:onClick="goToIcs"
+			android:background="@drawable/buttons"/>
+    	
+    	<Button
+        	android:id="@+id/javelin_button"
+        	android:layout_height="50dp"
+        	android:layout_width="match_parent"
+        	android:layout_marginTop="25dp"
+        	android:text="@string/javelin_button" 
+        	android:onClick="goToJavelin"
+			android:background="@drawable/buttons"/>
+    	
+    	<Button
+        	android:id="@+id/jg_button"
+        	android:layout_height="50dp"
+        	android:layout_width="match_parent"
+        	android:layout_marginTop="25dp"
+        	android:text="@string/jg_button" 
+        	android:onClick="goToJg"
+			android:background="@drawable/buttons"/>
+    	
+    	<Button
+        	android:id="@+id/kwa_button"
+        	android:layout_height="50dp"
+        	android:layout_width="match_parent"
+        	android:layout_marginTop="25dp"
+        	android:text="@string/kwa_button" 
+        	android:onClick="goToKwa"
+			android:background="@drawable/buttons"/>
+    	
+    	<Button
+        	android:id="@+id/kingarms_button"
+        	android:layout_height="50dp"
+        	android:layout_width="match_parent"
+        	android:layout_marginTop="25dp"
+        	android:text="@string/kingarms_button" 
+        	android:onClick="goToKingarms"
+			android:background="@drawable/buttons"/>
+    	
+    	<Button
+        	android:id="@+id/lct_button"
+        	android:layout_height="50dp"
+        	android:layout_width="match_parent"
+        	android:layout_marginTop="25dp"
+        	android:text="@string/lct_button" 
+        	android:onClick="goToLct"
+			android:background="@drawable/buttons"/>
+    	
+    	<Button
+        	android:id="@+id/lancertactical_button"
+        	android:layout_height="50dp"
+        	android:layout_width="match_parent"
+        	android:layout_marginTop="25dp"
+        	android:text="@string/lancertactical_button" 
+        	android:onClick="goToLancertactical"
+			android:background="@drawable/buttons"/>
+    	
+    	<Button
+        	android:id="@+id/src_button"
+        	android:layout_height="50dp"
+        	android:layout_width="match_parent"
+        	android:layout_marginTop="25dp"
+        	android:text="@string/src_button" 
+        	android:onClick="goToSrc"
+			android:background="@drawable/buttons"/>
+    	
+    	<Button
+        	android:id="@+id/socomgear_button"
+        	android:layout_height="50dp"
+        	android:layout_width="match_parent"
+        	android:layout_marginTop="25dp"
+        	android:text="@string/socomgear_button" 
+        	android:onClick="goToSocomgear"
+			android:background="@drawable/buttons"/>
+    	
+    	<Button
+        	android:id="@+id/tsd_button"
+        	android:layout_height="50dp"
+        	android:layout_width="match_parent"
+        	android:layout_marginTop="25dp"
+        	android:text="@string/tsd_button" 
+        	android:onClick="goToTsd"
+			android:background="@drawable/buttons"/>
+    	
+    	<Button
+        	android:id="@+id/tokyomarui_button"
+        	android:layout_height="50dp"
+        	android:layout_width="match_parent"
+        	android:layout_marginTop="25dp"
+        	android:text="@string/tokyomarui_button" 
+        	android:onClick="goToTokyomarui"
+			android:background="@drawable/buttons"/>
+    	
+    	<Button
+        	android:id="@+id/vfcgb_button"
+        	android:layout_height="50dp"
+        	android:layout_width="match_parent"
+        	android:layout_marginTop="25dp"
+        	android:text="@string/vfcgb_button" 
+        	android:onClick="goToVfcgb"
+			android:background="@drawable/buttons"/>
+    	
+    	<Button
+        	android:id="@+id/we_button"
+        	android:layout_height="50dp"
+        	android:layout_width="match_parent"
+        	android:layout_marginTop="25dp"
+        	android:text="@string/we_button" 
+        	android:onClick="goToWe"
+			android:background="@drawable/buttons"/>
+    	
+	</LinearLayout>
+	
+</ScrollView>

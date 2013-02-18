@@ -78,6 +78,182 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.airsoftarmory.MainSearchActivity" />
         </activity>
+        <activity
+            android:name="com.example.airsoftarmory.KwaActivity"
+            android:label="@string/title_activity_kwa"
+            android:parentActivityName="com.example.airsoftarmory.BrandActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.airsoftarmory.BrandActivity" />
+        </activity>
+        <activity
+            android:name="com.example.airsoftarmory.AandkActivity"
+            android:label="@string/title_activity_aandk"
+            android:parentActivityName="com.example.airsoftarmory.BrandActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.airsoftarmory.BrandActivity" />
+        </activity>
+        <activity
+            android:name="com.example.airsoftarmory.ApsActivity"
+            android:label="@string/title_activity_aps"
+            android:parentActivityName="com.example.airsoftarmory.BrandActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.airsoftarmory.BrandActivity" />
+        </activity>
+        <activity
+            android:name="com.example.airsoftarmory.AresActivity"
+            android:label="@string/title_activity_ares"
+            android:parentActivityName="com.example.airsoftarmory.BrandActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.airsoftarmory.BrandActivity" />
+        </activity>
+        <activity
+            android:name="com.example.airsoftarmory.CymaActivity"
+            android:label="@string/title_activity_cyma"
+            android:parentActivityName="com.example.airsoftarmory.BrandActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.airsoftarmory.BrandActivity" />
+        </activity>
+        <activity
+            android:name="com.example.airsoftarmory.ClassicarmyActivity"
+            android:label="@string/title_activity_classicarmy"
+            android:parentActivityName="com.example.airsoftarmory.BrandActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.airsoftarmory.BrandActivity" />
+        </activity>
+        <activity
+            android:name="com.example.airsoftarmory.DboysActivity"
+            android:label="@string/title_activity_dboys"
+            android:parentActivityName="com.example.airsoftarmory.BrandActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.airsoftarmory.BrandActivity" />
+        </activity>
+        <activity
+            android:name="com.example.airsoftarmory.Echo1Activity"
+            android:label="@string/title_activity_echo1"
+            android:parentActivityName="com.example.airsoftarmory.BrandActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.airsoftarmory.BrandActivity" />
+        </activity>
+        <activity
+            android:name="com.example.airsoftarmory.GandgActivity"
+            android:label="@string/title_activity_gandg"
+            android:parentActivityName="com.example.airsoftarmory.BrandActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.airsoftarmory.BrandActivity" />
+        </activity>
+        <activity
+            android:name="com.example.airsoftarmory.GandpActivity"
+            android:label="@string/title_activity_gandp"
+            android:parentActivityName="com.example.airsoftarmory.BrandActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.airsoftarmory.BrandActivity" />
+        </activity>
+        <activity
+            android:name="com.example.airsoftarmory.IcsActivity"
+            android:label="@string/title_activity_ics"
+            android:parentActivityName="com.example.airsoftarmory.BrandActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.airsoftarmory.BrandActivity" />
+        </activity>
+        <activity
+            android:name="com.example.airsoftarmory.JavelinActivity"
+            android:label="@string/title_activity_javelin"
+            android:parentActivityName="com.example.airsoftarmory.BrandActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.airsoftarmory.BrandActivity" />
+        </activity>
+        <activity
+            android:name="com.example.airsoftarmory.JgActivity"
+            android:label="@string/title_activity_jg"
+            android:parentActivityName="com.example.airsoftarmory.BrandActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.airsoftarmory.BrandActivity" />
+        </activity>
+        <activity
+            android:name="com.example.airsoftarmory.KingarmsActivity"
+            android:label="@string/title_activity_kingarms"
+            android:parentActivityName="com.example.airsoftarmory.BrandActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.airsoftarmory.BrandActivity" />
+        </activity>
+        <activity
+            android:name="com.example.airsoftarmory.LctActivity"
+            android:label="@string/title_activity_lct"
+            android:parentActivityName="com.example.airsoftarmory.BrandActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.airsoftarmory.BrandActivity" />
+        </activity>
+        <activity
+            android:name="com.example.airsoftarmory.LancertacticalActivity"
+            android:label="@string/title_activity_lancertactical"
+            android:parentActivityName="com.example.airsoftarmory.BrandActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.airsoftarmory.BrandActivity" />
+        </activity>
+        <activity
+            android:name="com.example.airsoftarmory.SrcActivity"
+            android:label="@string/title_activity_src"
+            android:parentActivityName="com.example.airsoftarmory.BrandActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.airsoftarmory.BrandActivity" />
+        </activity>
+        <activity
+            android:name="com.example.airsoftarmory.SocomgearActivity"
+            android:label="@string/title_activity_socomgear"
+            android:parentActivityName="com.example.airsoftarmory.BrandActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.airsoftarmory.BrandActivity" />
+        </activity>
+        <activity
+            android:name="com.example.airsoftarmory.TsdActivity"
+            android:label="@string/title_activity_tsd"
+            android:parentActivityName="com.example.airsoftarmory.BrandActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.airsoftarmory.BrandActivity" />
+        </activity>
+        <activity
+            android:name="com.example.airsoftarmory.TokyomaruiActivity"
+            android:label="@string/title_activity_tokyomarui"
+            android:parentActivityName="com.example.airsoftarmory.BrandActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.airsoftarmory.BrandActivity" />
+        </activity>
+        <activity
+            android:name="com.example.airsoftarmory.VfcgbActivity"
+            android:label="@string/title_activity_vfcgb"
+            android:parentActivityName="com.example.airsoftarmory.BrandActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.airsoftarmory.BrandActivity" />
+        </activity>
+        <activity
+            android:name="com.example.airsoftarmory.WeActivity"
+            android:label="@string/title_activity_we"
+            android:parentActivityName="com.example.airsoftarmory.BrandActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.airsoftarmory.BrandActivity" />
+        </activity>
     </application>
 
 </manifest>
