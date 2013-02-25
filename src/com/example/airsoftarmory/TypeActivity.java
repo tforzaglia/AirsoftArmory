@@ -2,8 +2,10 @@ package com.example.airsoftarmory;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.content.Intent;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.support.v4.app.NavUtils;
 
 public class TypeActivity extends Activity {
@@ -12,6 +14,24 @@ public class TypeActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_type);
+	
+		View button1 = this.findViewById(R.id.rifle_button);
+		button1.getBackground().setAlpha(190);
+		
+		View button2 = this.findViewById(R.id.support_button);
+		button2.getBackground().setAlpha(190);
+		
+		View button3 = this.findViewById(R.id.sniper_button);
+		button3.getBackground().setAlpha(190);
+		
+		View button4 = this.findViewById(R.id.smg_button);
+		button4.getBackground().setAlpha(190);
+		
+		View button5 = this.findViewById(R.id.pistol_button);
+		button5.getBackground().setAlpha(190);
+		
+		View button6 = this.findViewById(R.id.special_button);
+		button6.getBackground().setAlpha(190);
 	}
 
 	@Override
@@ -36,6 +56,53 @@ public class TypeActivity extends Activity {
 			return true;
 		}
 		return super.onOptionsItemSelected(item);
+	}
+	
+	public void goToRifle(View view) {
+		
+		//respond to button press
+		Intent intent = new Intent(this, RifleActivity.class);
+		startActivity(intent);
+	}
+	
+	//View parameter is the view that was clicked
+	public void goToSupport(View view) {
+				
+		//respond to button press
+		Intent intent = new Intent(this, SupportActivity.class);
+		startActivity(intent);
+	}
+	
+	//View parameter is the view that was clicked
+	public void goToSniper(View view) {
+					
+		//respond to button press
+		Intent intent = new Intent(this, SniperActivity.class);
+		startActivity(intent);
+	}
+		
+	//View parameter is the view that was clicked
+	public void goToSmg(View view) {
+					
+		//respond to button press
+		Intent intent = new Intent(this, SmgActivity.class);
+		startActivity(intent);
+	}
+		
+	//View parameter is the view that was clicked
+	public void goToPistol(View view) {
+					
+		//respond to button press
+		Intent intent = new Intent(this, PistolActivity.class);
+		startActivity(intent);
+	}
+	
+	//View parameter is the view that was clicked
+	public void goToSpecial(View view) {
+				
+		//respond to button press
+		Intent intent = new Intent(this, SpecialActivity.class);
+		startActivity(intent);
 	}
 
 }

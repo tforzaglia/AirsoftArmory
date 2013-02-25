@@ -32,6 +32,12 @@
     <string name="tokyomarui_button">Tokyo Marui</string>
     <string name="vfcgb_button">VFC/GB</string>
     <string name="we_button">WE</string>
+    <string name="rifle_button">Rifle</string>
+    <string name="support_button">Support</string>
+    <string name="sniper_button">Sniper</string>
+    <string name="smg_button">SMG</string>
+    <string name="pistol_button">Pistol</string>
+    <string name="special_button">Special</string>
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_main_search">Press a button to search</string>
     <string name="title_activity_brand">Select a Brand</string>
@@ -62,5 +68,11 @@
     <string name="title_activity_tokyomarui">Tokyo Marui</string>
     <string name="title_activity_vfcgb">VFC/GB</string>
     <string name="title_activity_we">WE</string>
+    <string name="title_activity_rifle">Rifle</string>
+    <string name="title_activity_support">Support</string>
+    <string name="title_activity_sniper">Sniper</string>
+    <string name="title_activity_smg">SMG</string>
+    <string name="title_activity_pistol">Pistol</string>
+    <string name="title_activity_special">Special</string>
 
 </resources>

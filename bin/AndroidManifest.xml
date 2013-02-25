@@ -254,6 +254,54 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.airsoftarmory.BrandActivity" />
         </activity>
+        <activity
+            android:name="com.example.airsoftarmory.RifleActivity"
+            android:label="@string/title_activity_rifle"
+            android:parentActivityName="com.example.airsoftarmory.TypeActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.airsoftarmory.TypeActivity" />
+        </activity>
+        <activity
+            android:name="com.example.airsoftarmory.SupportActivity"
+            android:label="@string/title_activity_support"
+            android:parentActivityName="com.example.airsoftarmory.TypeActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.airsoftarmory.TypeActivity" />
+        </activity>
+        <activity
+            android:name="com.example.airsoftarmory.SniperActivity"
+            android:label="@string/title_activity_sniper"
+            android:parentActivityName="com.example.airsoftarmory.TypeActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.airsoftarmory.TypeActivity" />
+        </activity>
+        <activity
+            android:name="com.example.airsoftarmory.SmgActivity"
+            android:label="@string/title_activity_smg"
+            android:parentActivityName="com.example.airsoftarmory.TypeActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.airsoftarmory.TypeActivity" />
+        </activity>
+        <activity
+            android:name="com.example.airsoftarmory.PistolActivity"
+            android:label="@string/title_activity_pistol"
+            android:parentActivityName="com.example.airsoftarmory.TypeActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.airsoftarmory.TypeActivity" />
+        </activity>
+        <activity
+            android:name="com.example.airsoftarmory.SpecialActivity"
+            android:label="@string/title_activity_special"
+            android:parentActivityName="com.example.airsoftarmory.TypeActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.airsoftarmory.TypeActivity" />
+        </activity>
     </application>
 
 </manifest>

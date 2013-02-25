@@ -1,14 +1,71 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".TypeActivity" >
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    	xmlns:tools="http://schemas.android.com/tools"
+    	android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:orientation="vertical" 
+    	android:paddingLeft="16dp"
+    	android:paddingRight="16dp"
+    	android:paddingTop="25dp"
+    	android:paddingBottom="35dp"
+    	android:background="@drawable/background">
+    	
+	    <Button
+        	android:id="@+id/rifle_button"
+        	android:layout_height="50dp"
+        	android:layout_width="match_parent"
+        	android:text="@string/rifle_button" 
+        	android:onClick="goToRifle" 
+        	android:background="@drawable/buttons"/>
+        
+    	<Button
+        	android:id="@+id/support_button"
+        	android:layout_height="50dp"
+        	android:layout_width="match_parent"
+        	android:layout_marginTop="35dp"
+        	android:text="@string/support_button" 
+        	android:onClick="goToSupport"
+			android:background="@drawable/buttons"/>
+    
+    	<Button
+        	android:id="@+id/sniper_button"
+        	android:layout_height="50dp"
+        	android:layout_width="match_parent"
+        	android:layout_marginTop="35dp"
+        	android:text="@string/sniper_button" 
+        	android:onClick="goToSniper"
+			android:background="@drawable/buttons"/>
+    	
+    	<Button
+        	android:id="@+id/smg_button"
+        	android:layout_height="50dp"
+        	android:layout_width="match_parent"
+        	android:layout_marginTop="35dp"
+        	android:text="@string/smg_button" 
+        	android:onClick="goToSmg"
+			android:background="@drawable/buttons"/>
+    	
+    	<Button
+        	android:id="@+id/pistol_button"
+        	android:layout_height="50dp"
+        	android:layout_width="match_parent"
+        	android:layout_marginTop="35dp"
+        	android:text="@string/pistol_button" 
+        	android:onClick="goToPistol"
+			android:background="@drawable/buttons"/>
+    	
+    	<Button
+        	android:id="@+id/special_button"
+        	android:layout_height="50dp"
+        	android:layout_width="match_parent"
+        	android:layout_marginTop="35dp"
+        	android:text="@string/special_button" 
+        	android:onClick="goToSpecial"
+			android:background="@drawable/buttons"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:text="@string/hello_world" />
-
-</RelativeLayout>
+    </LinearLayout>
+	
+</ScrollView>
