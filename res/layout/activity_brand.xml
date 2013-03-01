@@ -20,7 +20,7 @@
         	android:layout_height="50dp"
         	android:layout_width="match_parent"
         	android:text="@string/aandk_button" 
-        	android:onClick="goToAandk" 
+        	android:onClick="goToBrandQuery" 
         	android:background="@drawable/buttons"/>
         
     	<Button
@@ -29,7 +29,7 @@
         	android:layout_width="match_parent"
         	android:layout_marginTop="25dp"
         	android:text="@string/aps_button" 
-        	android:onClick="goToAps"
+        	android:onClick="goToBrandQuery"
 			android:background="@drawable/buttons"/>
     
     	<Button
@@ -38,7 +38,7 @@
         	android:layout_width="match_parent"
         	android:layout_marginTop="25dp"
         	android:text="@string/ares_button" 
-        	android:onClick="goToAres"
+        	android:onClick="goToBrandQuery"
 			android:background="@drawable/buttons"/>
     	
     	<Button
@@ -47,7 +47,7 @@
         	android:layout_width="match_parent"
         	android:layout_marginTop="25dp"
         	android:text="@string/cyma_button" 
-        	android:onClick="goToCyma"
+        	android:onClick="goToBrandQuery"
 			android:background="@drawable/buttons"/>
     	
     	<Button
@@ -56,7 +56,7 @@
         	android:layout_width="match_parent"
         	android:layout_marginTop="25dp"
         	android:text="@string/classicarmy_button" 
-        	android:onClick="goToClassicarmy"
+        	android:onClick="goToBrandQuery"
 			android:background="@drawable/buttons"/>
     	
     	<Button
@@ -65,7 +65,7 @@
         	android:layout_width="match_parent"
         	android:layout_marginTop="25dp"
         	android:text="@string/dboys_button" 
-        	android:onClick="goToDboys"
+        	android:onClick="goToBrandQuery"
 			android:background="@drawable/buttons"/>
     	
     	<Button
@@ -74,7 +74,7 @@
         	android:layout_width="match_parent"
         	android:layout_marginTop="25dp"
         	android:text="@string/echo1_button" 
-        	android:onClick="goToEcho1"
+        	android:onClick="goToBrandQuery"
 			android:background="@drawable/buttons"/>
     	
     	<Button
@@ -83,7 +83,7 @@
         	android:layout_width="match_parent"
         	android:layout_marginTop="25dp"
         	android:text="@string/gandg_button" 
-        	android:onClick="goToGandg"
+        	android:onClick="goToBrandQuery"
 			android:background="@drawable/buttons"/>
     	
     	<Button
@@ -92,7 +92,7 @@
         	android:layout_width="match_parent"
         	android:layout_marginTop="25dp"
         	android:text="@string/gandp_button" 
-        	android:onClick="goToGandp"
+        	android:onClick="goToBrandQuery"
 			android:background="@drawable/buttons"/>
     	
     	<Button
@@ -101,7 +101,7 @@
         	android:layout_width="match_parent"
         	android:layout_marginTop="25dp"
         	android:text="@string/ics_button" 
-        	android:onClick="goToIcs"
+        	android:onClick="goToBrandQuery"
 			android:background="@drawable/buttons"/>
     	
     	<Button
@@ -110,7 +110,7 @@
         	android:layout_width="match_parent"
         	android:layout_marginTop="25dp"
         	android:text="@string/javelin_button" 
-        	android:onClick="goToJavelin"
+        	android:onClick="goToBrandQuery"
 			android:background="@drawable/buttons"/>
     	
     	<Button
@@ -119,7 +119,7 @@
         	android:layout_width="match_parent"
         	android:layout_marginTop="25dp"
         	android:text="@string/jg_button" 
-        	android:onClick="goToJg"
+        	android:onClick="goToBrandQuery"
 			android:background="@drawable/buttons"/>
     	
     	<Button
@@ -128,7 +128,7 @@
         	android:layout_width="match_parent"
         	android:layout_marginTop="25dp"
         	android:text="@string/kwa_button" 
-        	android:onClick="goToKwa"
+        	android:onClick="goToBrandQuery"
 			android:background="@drawable/buttons"/>
     	
     	<Button
@@ -137,7 +137,7 @@
         	android:layout_width="match_parent"
         	android:layout_marginTop="25dp"
         	android:text="@string/kingarms_button" 
-        	android:onClick="goToKingarms"
+        	android:onClick="goToBrandQuery"
 			android:background="@drawable/buttons"/>
     	
     	<Button
@@ -146,7 +146,7 @@
         	android:layout_width="match_parent"
         	android:layout_marginTop="25dp"
         	android:text="@string/lct_button" 
-        	android:onClick="goToLct"
+        	android:onClick="goToBrandQuery"
 			android:background="@drawable/buttons"/>
     	
     	<Button
@@ -155,7 +155,7 @@
         	android:layout_width="match_parent"
         	android:layout_marginTop="25dp"
         	android:text="@string/lancertactical_button" 
-        	android:onClick="goToLancertactical"
+        	android:onClick="goToBrandQuery"
 			android:background="@drawable/buttons"/>
     	
     	<Button
@@ -164,7 +164,7 @@
         	android:layout_width="match_parent"
         	android:layout_marginTop="25dp"
         	android:text="@string/src_button" 
-        	android:onClick="goToSrc"
+        	android:onClick="goToBrandQuery"
 			android:background="@drawable/buttons"/>
     	
     	<Button
@@ -173,7 +173,7 @@
         	android:layout_width="match_parent"
         	android:layout_marginTop="25dp"
         	android:text="@string/socomgear_button" 
-        	android:onClick="goToSocomgear"
+        	android:onClick="goToBrandQuery"
 			android:background="@drawable/buttons"/>
     	
     	<Button
@@ -182,7 +182,7 @@
         	android:layout_width="match_parent"
         	android:layout_marginTop="25dp"
         	android:text="@string/tsd_button" 
-        	android:onClick="goToTsd"
+        	android:onClick="goToBrandQuery"
 			android:background="@drawable/buttons"/>
     	
     	<Button
@@ -191,7 +191,7 @@
         	android:layout_width="match_parent"
         	android:layout_marginTop="25dp"
         	android:text="@string/tokyomarui_button" 
-        	android:onClick="goToTokyomarui"
+        	android:onClick="goToBrandQuery"
 			android:background="@drawable/buttons"/>
     	
     	<Button
@@ -200,7 +200,7 @@
         	android:layout_width="match_parent"
         	android:layout_marginTop="25dp"
         	android:text="@string/vfcgb_button" 
-        	android:onClick="goToVfcgb"
+        	android:onClick="goToBrandQuery"
 			android:background="@drawable/buttons"/>
     	
     	<Button
@@ -209,7 +209,7 @@
         	android:layout_width="match_parent"
         	android:layout_marginTop="25dp"
         	android:text="@string/we_button" 
-        	android:onClick="goToWe"
+        	android:onClick="goToBrandQuery"
 			android:background="@drawable/buttons"/>
     	
 	</LinearLayout>

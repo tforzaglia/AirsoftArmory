@@ -74,5 +74,6 @@
     <string name="title_activity_smg">SMG</string>
     <string name="title_activity_pistol">Pistol</string>
     <string name="title_activity_special">Special</string>
+    <string name="title_activity_brand_query">Results</string>
 
 </resources>

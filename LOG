@@ -17,4 +17,6 @@
 2/25 12:01 AM
 -Added buttons to the Type Activity and created activities for each main type that can be selected.
 
-
+3/1 3:23 AM
+-Removed all the Brand activities and replaced them with a single, general BrandQuery activity which will extract the text of the button pressed to reach the activity. 
+-Passing of the button name to the Brand activity to the BrandQuery activity is working

@@ -302,6 +302,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.airsoftarmory.TypeActivity" />
         </activity>
+        <activity
+            android:name="com.example.airsoftarmory.BrandQueryActivity"
+            android:label="@string/title_activity_brand_query"
+            android:parentActivityName="com.example.airsoftarmory.BrandActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.airsoftarmory.BrandActivity" />
+        </activity>
     </application>
 
 </manifest>

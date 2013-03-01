@@ -2,24 +2,32 @@ package com.example.airsoftarmory;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.content.Intent;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 import android.support.v4.app.NavUtils;
 
-public class KingarmsActivity extends Activity {
+public class BrandQueryActivity extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_kingarms);
-		// Show the Up button in the action bar.
-		getActionBar().setDisplayHomeAsUpEnabled(true);
+		
+		// Create the text view --replaced later by button with gun names
+	    TextView textView = new TextView(this);
+	    textView.setTextSize(40);
+	    Intent intent = getIntent();
+        String activity = intent.getStringExtra("activity");
+        textView.setText(activity);
+        
+        setContentView(textView);
 	}
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.activity_kingarms, menu);
+		getMenuInflater().inflate(R.menu.activity_brand_query, menu);
 		return true;
 	}
 

@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.support.v4.app.NavUtils;
 
 public class BrandActivity extends Activity {
@@ -107,179 +108,13 @@ public class BrandActivity extends Activity {
 	}
 	
 	//View parameter is the view that was clicked
-	public void goToAandk(View view) {
-			
-		//respond to button press
-		Intent intent = new Intent(this, AandkActivity.class);
-		startActivity(intent);
-	}
-	
-	//View parameter is the view that was clicked
-	public void goToAps(View view) {
-				
-		//respond to button press
-		Intent intent = new Intent(this, ApsActivity.class);
-		startActivity(intent);
-	}
-	
-	//View parameter is the view that was clicked
-	public void goToAres(View view) {
-					
-		//respond to button press
-		Intent intent = new Intent(this, AresActivity.class);
-		startActivity(intent);
-	}
-		
-	//View parameter is the view that was clicked
-	public void goToCyma(View view) {
-					
-		//respond to button press
-		Intent intent = new Intent(this, CymaActivity.class);
-		startActivity(intent);
-	}
-		
-	//View parameter is the view that was clicked
-	public void goToClassicarmy(View view) {
-					
-		//respond to button press
-		Intent intent = new Intent(this, ClassicarmyActivity.class);
-		startActivity(intent);
-	}
-	
-	//View parameter is the view that was clicked
-	public void goToDboys(View view) {
-				
-		//respond to button press
-		Intent intent = new Intent(this, DboysActivity.class);
-		startActivity(intent);
-	}
-		
-	//View parameter is the view that was clicked
-	public void goToEcho1(View view) {
-					
-		//respond to button press
-		Intent intent = new Intent(this, Echo1Activity.class);
-		startActivity(intent);
-	}
-		
-	//View parameter is the view that was clicked
-	public void goToGandg(View view) {
-						
-		//respond to button press
-		Intent intent = new Intent(this, GandgActivity.class);
-		startActivity(intent);
-	}
-			
-	//View parameter is the view that was clicked
-	public void goToGandp(View view) {
-						
-		//respond to button press
-		Intent intent = new Intent(this, GandpActivity.class);
-		startActivity(intent);
-	}
-			
-	//View parameter is the view that was clicked
-	public void goToIcs(View view) {
-						
-		//respond to button press
-		Intent intent = new Intent(this, IcsActivity.class);
-		startActivity(intent);
-	}
-		
-	//View parameter is the view that was clicked
-	public void goToJavelin(View view) {
-				
-		//respond to button press
-		Intent intent = new Intent(this, JavelinActivity.class);
-		startActivity(intent);
-	}
-		
-	//View parameter is the view that was clicked
-	public void goToJg(View view) {
-					
-		//respond to button press
-		Intent intent = new Intent(this, JgActivity.class);
-		startActivity(intent);
-	}
-		
-	//View parameter is the view that was clicked
-	public void goToKwa(View view) {
-						
-		//respond to button press
-		Intent intent = new Intent(this, KwaActivity.class);
-		startActivity(intent);
-	}
-			
-	//View parameter is the view that was clicked
-	public void goToKingarms(View view) {
-						
-		//respond to button press
-		Intent intent = new Intent(this, KingarmsActivity.class);
-		startActivity(intent);
-	}
-			
-	//View parameter is the view that was clicked
-	public void goToLct(View view) {
-						
-		//respond to button press
-		Intent intent = new Intent(this, LctActivity.class);
-		startActivity(intent);
-	}
-
-	//View parameter is the view that was clicked
-	public void goToLancertactical(View view) {
-				
-		//respond to button press
-		Intent intent = new Intent(this, LancertacticalActivity.class);
-		startActivity(intent);
-	}
-		
-	//View parameter is the view that was clicked
-	public void goToSrc(View view) {
-					
-		//respond to button press
-		Intent intent = new Intent(this, SrcActivity.class);
-		startActivity(intent);
-	}
-		
-	//View parameter is the view that was clicked
-	public void goToSocomgear(View view) {
-						
-		//respond to button press
-		Intent intent = new Intent(this, SocomgearActivity.class);
-		startActivity(intent);
-	}
-			
-	//View parameter is the view that was clicked
-	public void goToTsd(View view) {
-						
-		//respond to button press
-		Intent intent = new Intent(this, TsdActivity.class);
-		startActivity(intent);
-	}
-			
-	//View parameter is the view that was clicked
-	public void goToTokyomRUI(View view) {
-						
-		//respond to button press
-		Intent intent = new Intent(this, TokyomaruiActivity.class);
-		startActivity(intent);
-	}
-	
-	//View parameter is the view that was clicked
-	public void goToVfcgb(View view) {
+	public void goToBrandQuery(View view) {
 							
 		//respond to button press
-		Intent intent = new Intent(this, VfcgbActivity.class);
+		Intent intent = new Intent(this, BrandQueryActivity.class);
+		Button pressed = (Button)view;
+		String brandName = pressed.getText().toString();
+		intent.putExtra("activity",brandName);
 		startActivity(intent);
 	}
-				
-	//View parameter is the view that was clicked
-	public void goToWe(View view) {
-							
-		//respond to button press
-		Intent intent = new Intent(this, WeActivity.class);
-		startActivity(intent);
-	}
-
 }
