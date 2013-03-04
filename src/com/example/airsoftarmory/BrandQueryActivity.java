@@ -1,8 +1,11 @@
 package com.example.airsoftarmory;
 
+import com.example.airsoftarmory.DatabaseHelper;
+
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
+import android.database.Cursor;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
@@ -19,8 +22,14 @@ public class BrandQueryActivity extends Activity {
 	    textView.setTextSize(40);
 	    Intent intent = getIntent();
         String activity = intent.getStringExtra("activity");
-        textView.setText(activity);
         
+        DatabaseHelper dbHelper = new DatabaseHelper(this);
+		Cursor cursor = dbHelper.getAllByBrand(activity);
+		String str = cursor.getString(0); 
+
+		cursor.close();
+
+        textView.setText(str);        
         setContentView(textView);
 	}
 

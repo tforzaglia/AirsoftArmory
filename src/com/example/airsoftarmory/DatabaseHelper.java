@@ -24,6 +24,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     
     static final String colId="_id";
     static final String colName="Name";
+    static final String colBrand="Brand";
     static final String colLocale="locale";
     static final String gunTable="AirsoftGuns";
     
@@ -47,22 +48,16 @@ public class DatabaseHelper extends SQLiteOpenHelper {
  
     	boolean dbExist = checkDataBase();
  
-    	if(dbExist){
+    	if(dbExist) {
     		//do nothing - database already exist
     	}else{
- 
     		//By calling this method an empty database will be created into the default system path
                //of your application so we are gonna be able to overwrite that database with our database.
         	this.getReadableDatabase();
- 
         	try {
- 
     			copyDataBase();
- 
     		} catch (IOException e) {
- 
         		throw new Error("Error copying database");
- 
         	}
     	} 	
     }
@@ -80,15 +75,11 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     		checkDB = SQLiteDatabase.openDatabase(myPath, null, SQLiteDatabase.OPEN_READONLY);
  
     	}catch(SQLiteException e){
- 
-    		//database does't exist yet.
- 
+    		//database does't exist yet
     	}
  
     	if(checkDB != null){
- 
     		checkDB.close();
- 
     	}
  
     	return checkDB != null ? true : false;
@@ -121,7 +112,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     	myOutput.flush();
     	myOutput.close();
     	myInput.close();
- 
     }
     
     public void openDataBase() throws SQLException{
@@ -129,20 +119,20 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     	//Open the database
         String myPath = DB_PATH + DB_NAME;
     	myDataBase = SQLiteDatabase.openDatabase(myPath, null, SQLiteDatabase.OPEN_READONLY);
- 
     }
  
     @Override
 	public synchronized void close() {
+    	
+    	if(myDataBase != null) {
+    		myDataBase.close();
+    	}
  
-    	    if(myDataBase != null)
-    		    myDataBase.close();
- 
-    	    super.close();
- 
+    	super.close();
 	}
     
     public Cursor getAllDepts() {
+    	
 	   SQLiteDatabase db=this.getReadableDatabase();
 	   //Cursor cur=db.rawQuery("SELECT "+colId+" as _id, "+colName+" from "+gunTable,new String [] {});
 	   Cursor cur=db.rawQuery("SELECT "+colName+" from "+gunTable,new String [] {});
@@ -150,9 +140,14 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 	   return cur;
 	}
     
-    public String getName(Cursor cursor) {
+    public Cursor getAllByBrand(String brandName) {
     	
-    	return cursor.getString(cursor.getColumnIndex("Name"));
+    	SQLiteDatabase db=this.getReadableDatabase();
+    	
+    	//Cursor cur = db.rawQuery("SELECT * from "+gunTable+" WHERE Brand=?", new String [] {brandName});
+    	Cursor cur = db.rawQuery("SELECT "+colName+" from "+gunTable+" WHERE Brand=?", new String [] {brandName});
+    	cur.moveToFirst();
+ 	   	return cur;
     }
     
     public String getNameInCol1() {

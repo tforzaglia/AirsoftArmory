@@ -1,5 +1,7 @@
 package com.example.airsoftarmory;
 
+import java.io.IOException;
+
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
@@ -12,9 +14,8 @@ public class MainActivity extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 				
-		
 		super.onCreate(savedInstanceState);
-/*
+
         DatabaseHelper myDbHelper = new DatabaseHelper(this);
  
         try {
@@ -28,7 +29,7 @@ public class MainActivity extends Activity {
         }catch(SQLException sqle){
         	throw sqle;
         }
-*/        
+        
 		setContentView(R.layout.activity_main);
 		
 		View button1 = this.findViewById(R.id.search_button);

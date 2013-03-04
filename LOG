@@ -20,3 +20,10 @@
 3/1 3:23 AM
 -Removed all the Brand activities and replaced them with a single, general BrandQuery activity which will extract the text of the button pressed to reach the activity. 
 -Passing of the button name to the Brand activity to the BrandQuery activity is working
+-Added the Database Helper class
+
+3/4 1:38 AM
+-Added database creation code to the onCreate() method of the main class so the database is created when the app is started for the first time.
+-Created a database helper object in the BrandQueryActivity class. Right now it displays the name of the first record in the database that matches the selected brand.
+
+
