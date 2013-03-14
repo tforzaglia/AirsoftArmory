@@ -26,4 +26,8 @@
 -Added database creation code to the onCreate() method of the main class so the database is created when the app is started for the first time.
 -Created a database helper object in the BrandQueryActivity class. Right now it displays the name of the first record in the database that matches the selected brand.
 
+3/14 2:07 AM
+-Updated the sqlite databse with another CYMA record for testing
+-Now both names are being captured by the Cursor object, stored in an ArrayList and output to the screen when the user selects CYMA from the Brand page. This obviously can be extended to any brand.
+
 

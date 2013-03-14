@@ -131,39 +131,17 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     	super.close();
 	}
     
-    public Cursor getAllDepts() {
-    	
-	   SQLiteDatabase db=this.getReadableDatabase();
-	   //Cursor cur=db.rawQuery("SELECT "+colId+" as _id, "+colName+" from "+gunTable,new String [] {});
-	   Cursor cur=db.rawQuery("SELECT "+colName+" from "+gunTable,new String [] {});
-	   cur.moveToFirst();
-	   return cur;
-	}
-    
     public Cursor getAllByBrand(String brandName) {
     	
     	SQLiteDatabase db=this.getReadableDatabase();
     	
     	//Cursor cur = db.rawQuery("SELECT * from "+gunTable+" WHERE Brand=?", new String [] {brandName});
-    	Cursor cur = db.rawQuery("SELECT "+colName+" from "+gunTable+" WHERE Brand=?", new String [] {brandName});
-    	cur.moveToFirst();
+    	Cursor cur = db.rawQuery("SELECT Name from AirsoftGuns WHERE Brand=?", new String [] {brandName});
+    	//Cursor cur = db.rawQuery("SELECT Name from AirsoftGuns WHERE Brand='CYMA'", new String [] {});
+    	//cur.moveToFirst();
  	   	return cur;
     }
-    
-    public String getNameInCol1() {
-    	SQLiteDatabase db=this.getReadableDatabase();
-    	String [] columns=new String[]{colName};
-    	//Cursor c=db.query(gunTable, columns, colId+"=?", new String[] {"1"}, null, null, null);
-    	Cursor c = db.rawQuery("SELECT "+colId+" as _id FROM "+gunTable+" WHERE "+colName+"=?", new String[] {"CM046"});
-    	//Cursor c =db.rawQuery("SELECT "+colId+" as _id, "+colName+" from "+gunTable,new String [] {});
-    	c.moveToFirst();
-    	//int i = c.getInt(c.getColumnIndex("_id"));
-    	//String str = c.getString(i);
-    	String str = c.getString(c.getColumnIndex("Name"));
-    	c.close();
-    	//System.out.println(str);
- 	   	return str;
-    }
+
  
 	@Override
 	public void onCreate(SQLiteDatabase db) {

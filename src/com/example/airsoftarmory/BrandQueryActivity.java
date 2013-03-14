@@ -1,5 +1,7 @@
 package com.example.airsoftarmory;
 
+import java.util.ArrayList;
+
 import com.example.airsoftarmory.DatabaseHelper;
 
 import android.os.Bundle;
@@ -17,7 +19,7 @@ public class BrandQueryActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		
-		// Create the text view --replaced later by button with gun names
+		//create the text view --replaced later by button with gun names
 	    TextView textView = new TextView(this);
 	    textView.setTextSize(40);
 	    Intent intent = getIntent();
@@ -25,12 +27,26 @@ public class BrandQueryActivity extends Activity {
         
         DatabaseHelper dbHelper = new DatabaseHelper(this);
 		Cursor cursor = dbHelper.getAllByBrand(activity);
-		String str = cursor.getString(0); 
-
+		cursor.moveToFirst();
+			
+		ArrayList<String> gunNames = new ArrayList<String>();
+		while (cursor.isAfterLast() == false) {
+	        	String gun = cursor.getString(cursor.getColumnIndex("Name"));
+	        	gunNames.add(gun);
+	        	cursor.moveToNext();
+		}
+		
+		//DEBUG
+		System.out.println(gunNames);
+		System.out.println(cursor.getCount());
+		
 		cursor.close();
-
-        textView.setText(str);        
+		
+		//HARD CODED FOR CYMA -- TESTING
+        textView.setText(gunNames.get(0).toString() + "\n" + gunNames.get(1).toString());        
         setContentView(textView);
+        
+        //UNINSTALL THE APP IF DB IS UPDATED
 	}
 
 	@Override
