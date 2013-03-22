@@ -32,3 +32,7 @@
 
 3/15 1:22 AM
 -Clicking a brand name button will now bring up a new screen with buttons for each gun of that brand. 
+
+3/21 11:44 PM
+-Clicking on gun names from the brand query screen now loads a new activity (which will be filled with information pertaining to the selected gun)
+-New activity (GunInfo) is passed the gun name on the button clicked. Right now all the activity does is display the name.

@@ -310,6 +310,10 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.airsoftarmory.BrandActivity" />
         </activity>
+        <activity
+            android:name="com.example.airsoftarmory.GunInfoActivity"
+            android:label="@string/title_activity_gun_info" >
+        </activity>
     </application>
 
 </manifest>

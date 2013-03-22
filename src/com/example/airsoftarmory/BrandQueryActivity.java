@@ -10,6 +10,7 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout.LayoutParams;
 import android.widget.LinearLayout;
@@ -55,9 +56,15 @@ public class BrandQueryActivity extends Activity {
 	        ll.getPaddingLeft();
 	        ll.setTag(i);
 	        Button b = new Button(this);
+	        b.setOnClickListener(new View.OnClickListener() {
+	             public void onClick(View v) {
+	            	 goToGunInfo(v);
+	             }
+	         });
 	        b.setLayoutParams(new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT));
 	        b.setTag(i);
-	        b.setText(gunNames.get(i));            
+	        b.setText(gunNames.get(i));    
+	        b.getBackground().setAlpha(190);
 	        ll.addView(b);                    
 	        mainLayout.addView(ll);
 		}
@@ -76,6 +83,17 @@ public class BrandQueryActivity extends Activity {
         //setContentView(textView);
         
         //UNINSTALL THE APP IF DB IS UPDATED
+	}
+	
+	//View parameter is the view that was clicked
+	public void goToGunInfo(View view) {
+								
+		//respond to button press
+		Intent intent = new Intent(this, GunInfoActivity.class);
+		Button pressed = (Button)view;
+		String gunName = pressed.getText().toString();
+		intent.putExtra("activity",gunName);
+		startActivity(intent);
 	}
 
 	@Override
