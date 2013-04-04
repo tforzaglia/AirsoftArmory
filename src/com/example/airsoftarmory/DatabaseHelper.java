@@ -135,10 +135,15 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     	
     	SQLiteDatabase db=this.getReadableDatabase();
     	
-    	//Cursor cur = db.rawQuery("SELECT * from "+gunTable+" WHERE Brand=?", new String [] {brandName});
     	Cursor cur = db.rawQuery("SELECT Name from AirsoftGuns WHERE Brand=?", new String [] {brandName});
-    	//Cursor cur = db.rawQuery("SELECT Name from AirsoftGuns WHERE Brand='CYMA'", new String [] {});
-    	//cur.moveToFirst();
+ 	   	return cur;
+    }
+    
+    public Cursor getStatsByName(String gunName) {
+    	
+    	SQLiteDatabase db=this.getReadableDatabase();
+    	
+    	Cursor cur = db.rawQuery("SELECT * from AirsoftGuns WHERE Name=?", new String [] {gunName});
  	   	return cur;
     }
 
