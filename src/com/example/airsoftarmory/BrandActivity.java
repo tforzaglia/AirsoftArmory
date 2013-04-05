@@ -114,7 +114,9 @@ public class BrandActivity extends Activity {
 		Intent intent = new Intent(this, BrandQueryActivity.class);
 		Button pressed = (Button)view;
 		String brandName = pressed.getText().toString();
+		String callingClass = "brand";
 		intent.putExtra("activity",brandName);
+		intent.putExtra("calledFrom",callingClass);
 		startActivity(intent);
 	}
 }

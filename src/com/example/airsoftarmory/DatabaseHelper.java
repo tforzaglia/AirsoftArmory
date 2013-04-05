@@ -139,6 +139,14 @@ public class DatabaseHelper extends SQLiteOpenHelper {
  	   	return cur;
     }
     
+    public Cursor getAllByType(String subtype) {
+    	
+    	SQLiteDatabase db=this.getReadableDatabase();
+    	
+    	Cursor cur = db.rawQuery("SELECT Name from AirsoftGuns WHERE SubType=?", new String [] {subtype});
+ 	   	return cur;
+    }
+    
     public Cursor getStatsByName(String gunName) {
     	
     	SQLiteDatabase db=this.getReadableDatabase();

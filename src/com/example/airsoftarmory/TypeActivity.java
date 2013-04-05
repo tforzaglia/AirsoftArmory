@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.support.v4.app.NavUtils;
 
 public class TypeActivity extends Activity {
@@ -58,51 +59,13 @@ public class TypeActivity extends Activity {
 		return super.onOptionsItemSelected(item);
 	}
 	
-	public void goToRifle(View view) {
+	public void goToSubType(View view) {
 		
 		//respond to button press
-		Intent intent = new Intent(this, RifleActivity.class);
+		Intent intent = new Intent(this, SubTypeActivity.class);
+		Button pressed = (Button)view;
+		String type = pressed.getText().toString();
+		intent.putExtra("activity",type);
 		startActivity(intent);
 	}
-	
-	//View parameter is the view that was clicked
-	public void goToSupport(View view) {
-				
-		//respond to button press
-		Intent intent = new Intent(this, SupportActivity.class);
-		startActivity(intent);
-	}
-	
-	//View parameter is the view that was clicked
-	public void goToSniper(View view) {
-					
-		//respond to button press
-		Intent intent = new Intent(this, SniperActivity.class);
-		startActivity(intent);
-	}
-		
-	//View parameter is the view that was clicked
-	public void goToSmg(View view) {
-					
-		//respond to button press
-		Intent intent = new Intent(this, SmgActivity.class);
-		startActivity(intent);
-	}
-		
-	//View parameter is the view that was clicked
-	public void goToPistol(View view) {
-					
-		//respond to button press
-		Intent intent = new Intent(this, PistolActivity.class);
-		startActivity(intent);
-	}
-	
-	//View parameter is the view that was clicked
-	public void goToSpecial(View view) {
-				
-		//respond to button press
-		Intent intent = new Intent(this, SpecialActivity.class);
-		startActivity(intent);
-	}
-
 }

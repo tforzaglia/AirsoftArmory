@@ -314,6 +314,14 @@
             android:name="com.example.airsoftarmory.GunInfoActivity"
             android:label="@string/title_activity_gun_info" >
         </activity>
+        <activity
+            android:name="com.example.airsoftarmory.SubTypeActivity"
+            android:label="@string/title_activity_sub_type"
+            android:parentActivityName="com.example.airsoftarmory.TypeActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.airsoftarmory.TypeActivity" />
+        </activity>
     </application>
 
 </manifest>

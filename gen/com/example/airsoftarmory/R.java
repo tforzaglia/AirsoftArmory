@@ -63,14 +63,9 @@ public final class R {
         public static final int activity_main=0x7f030005;
         public static final int activity_main_search=0x7f030006;
         public static final int activity_my_armory=0x7f030007;
-        public static final int activity_pistol=0x7f030008;
-        public static final int activity_propulsion=0x7f030009;
-        public static final int activity_rifle=0x7f03000a;
-        public static final int activity_smg=0x7f03000b;
-        public static final int activity_sniper=0x7f03000c;
-        public static final int activity_special=0x7f03000d;
-        public static final int activity_support=0x7f03000e;
-        public static final int activity_type=0x7f03000f;
+        public static final int activity_propulsion=0x7f030008;
+        public static final int activity_sub_type=0x7f030009;
+        public static final int activity_type=0x7f03000a;
     }
     public static final class menu {
         public static final int activity_aandk=0x7f060000;
@@ -105,12 +100,13 @@ public final class R {
         public static final int activity_socomgear=0x7f06001d;
         public static final int activity_special=0x7f06001e;
         public static final int activity_src=0x7f06001f;
-        public static final int activity_support=0x7f060020;
-        public static final int activity_tokyomarui=0x7f060021;
-        public static final int activity_tsd=0x7f060022;
-        public static final int activity_type=0x7f060023;
-        public static final int activity_vfcgb=0x7f060024;
-        public static final int activity_we=0x7f060025;
+        public static final int activity_sub_type=0x7f060020;
+        public static final int activity_support=0x7f060021;
+        public static final int activity_tokyomarui=0x7f060022;
+        public static final int activity_tsd=0x7f060023;
+        public static final int activity_type=0x7f060024;
+        public static final int activity_vfcgb=0x7f060025;
+        public static final int activity_we=0x7f060026;
     }
     public static final class string {
         public static final int aandk_button=0x7f040009;
@@ -177,6 +173,7 @@ public final class R {
         public static final int title_activity_socomgear=0x7f04003e;
         public static final int title_activity_special=0x7f040048;
         public static final int title_activity_src=0x7f04003d;
+        public static final int title_activity_sub_type=0x7f04004b;
         public static final int title_activity_support=0x7f040044;
         public static final int title_activity_tokyomarui=0x7f040040;
         public static final int title_activity_tsd=0x7f04003f;

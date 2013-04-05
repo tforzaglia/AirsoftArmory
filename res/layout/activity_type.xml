@@ -18,7 +18,7 @@
         	android:layout_height="50dp"
         	android:layout_width="match_parent"
         	android:text="@string/rifle_button" 
-        	android:onClick="goToRifle" 
+        	android:onClick="goToSubType" 
         	android:background="@drawable/buttons"/>
         
     	<Button
@@ -27,7 +27,7 @@
         	android:layout_width="match_parent"
         	android:layout_marginTop="35dp"
         	android:text="@string/support_button" 
-        	android:onClick="goToSupport"
+        	android:onClick="goToSubType"
 			android:background="@drawable/buttons"/>
     
     	<Button
@@ -36,7 +36,7 @@
         	android:layout_width="match_parent"
         	android:layout_marginTop="35dp"
         	android:text="@string/sniper_button" 
-        	android:onClick="goToSniper"
+        	android:onClick="goToSubType"
 			android:background="@drawable/buttons"/>
     	
     	<Button
@@ -45,7 +45,7 @@
         	android:layout_width="match_parent"
         	android:layout_marginTop="35dp"
         	android:text="@string/smg_button" 
-        	android:onClick="goToSmg"
+        	android:onClick="goToSubType"
 			android:background="@drawable/buttons"/>
     	
     	<Button
@@ -54,7 +54,7 @@
         	android:layout_width="match_parent"
         	android:layout_marginTop="35dp"
         	android:text="@string/pistol_button" 
-        	android:onClick="goToPistol"
+        	android:onClick="goToSubType"
 			android:background="@drawable/buttons"/>
     	
     	<Button
@@ -63,7 +63,7 @@
         	android:layout_width="match_parent"
         	android:layout_marginTop="35dp"
         	android:text="@string/special_button" 
-        	android:onClick="goToSpecial"
+        	android:onClick="goToSubType"
 			android:background="@drawable/buttons"/>
 
     </LinearLayout>

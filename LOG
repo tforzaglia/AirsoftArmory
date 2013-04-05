@@ -40,3 +40,9 @@
 4/4 1:37 AM
 -Modified the information in the database
 -GunInfo activity now displays all the information for the chosen gun
+
+4/5 2:46 AM
+-Set up SubType activity to load sub type buttons based on the main type chosen
+-Added new method to DBHelper class to query the db and return all gun names of a given subtype
+-Clicking the name generated from the subtype query uses the same BrandQueryActivity class (to be renamed later)
+-Fixed button display issues

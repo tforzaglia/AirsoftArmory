@@ -1,26 +1,23 @@
 package com.example.airsoftarmory;
 
 import java.util.ArrayList;
-
-import com.example.airsoftarmory.DatabaseHelper;
+import java.util.Arrays;
+import java.util.List;
 
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
-import android.database.Cursor;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.LinearLayout.LayoutParams;
 import android.widget.LinearLayout;
+import android.widget.LinearLayout.LayoutParams;
 import android.widget.ScrollView;
 import android.support.v4.app.NavUtils;
 
-public class BrandQueryActivity extends Activity {
+public class SubTypeActivity extends Activity {
 
-	private Cursor cursor;
-	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -32,31 +29,41 @@ public class BrandQueryActivity extends Activity {
 	    
 	    Intent intent = getIntent();
         String activity = intent.getStringExtra("activity");
-        String calledFrom = intent.getStringExtra("calledFrom");
-        DatabaseHelper dbHelper = new DatabaseHelper(this);
         
-        if(calledFrom.equals("brand")) {
-        	cursor = dbHelper.getAllByBrand(activity);
-        }
-        if(calledFrom.equals("type")) {
-        	cursor = dbHelper.getAllByType(activity);
-        }
-        
-		cursor.moveToFirst();
-			
-		ArrayList<String> gunNames = new ArrayList<String>();
-		while (cursor.isAfterLast() == false) {
-	        	String gun = cursor.getString(cursor.getColumnIndex("Name"));
-	        	gunNames.add(gun);
-	        	cursor.moveToNext();
+        String[] rifles = {"AK", "AUG", "FAL", "G36", "GALIL", "HK416/417", "L85", "M4/M16/AR", "M14", "M249/M60/MK23/PKM", 
+        		"MASADA/ACR", "MP44", "SCAR", "SIG 550/551/552/556", "TAR-21", "THOMPSON", "XCR"};
+        String[] supports = {""};
+        String[] snipers = {"DRAGUNOV", "M24/M28", "SR25"};
+        String[] smgs = {"FN2000", "MP5", "MP7", "MP9", "MP40", "P90", "PDW", "UMP", "UZI"};
+        String[] pistols = {"1911", "DESERT EAGLE", "GLOCK", "M9", "MAC10/11", "USP"};
+        String[] specials = {"MGL", "Minigun"};
+		List<String> selection = new ArrayList<String>();
+		
+		if(activity.equals("Rifle")) {
+			selection = Arrays.asList(rifles);
+		}
+		else if(activity.equals("Support")) {
+			selection = Arrays.asList(supports);
+		}
+		else if(activity.equals("Sniper")) {
+			selection = Arrays.asList(snipers);
+		}
+		else if(activity.equals("SMG")) {
+			selection = Arrays.asList(smgs);
+		}
+		else if(activity.equals("Pistol")) {
+			selection = Arrays.asList(pistols);
+		}
+		else if(activity.equals("Special")) {
+			selection = Arrays.asList(specials);
 		}
 		
-		for(int i = 0; i < gunNames.size(); i++) {
+		for(int i = 0; i < selection.size(); i++) {
 			LinearLayout ll = new LinearLayout(this);			
 	        Button b = new Button(this);
 	        b.setOnClickListener(new View.OnClickListener() {
 	             public void onClick(View v) {
-	            	 goToGunInfo(v);
+	            	 goToQuery(v);
 	             }
 	         });
 	        LayoutParams params = new LayoutParams(
@@ -66,32 +73,34 @@ public class BrandQueryActivity extends Activity {
 	        //left, top, right, bottom
 	        params.setMargins(25, 40, 25, 40);
 	        b.setLayoutParams(params);
-	        b.setText(gunNames.get(i));   
+	        b.setText(selection.get(i));   
 	        b.setBackgroundResource(R.drawable.buttons);	        
 	        ll.addView(b);                    
 	        mainLayout.addView(ll);
 		}
+		
 		scrollView.addView(mainLayout);
 	    setContentView(scrollView);
 		
-		cursor.close();
 	}
 	
 	//View parameter is the view that was clicked
-	public void goToGunInfo(View view) {
-								
+	public void goToQuery(View view) {
+									
 		//respond to button press
-		Intent intent = new Intent(this, GunInfoActivity.class);
+		Intent intent = new Intent(this, BrandQueryActivity.class);
 		Button pressed = (Button)view;
-		String gunName = pressed.getText().toString();
-		intent.putExtra("activity",gunName);
+		String subtype = pressed.getText().toString();
+		String callingClass = "type";
+		intent.putExtra("calledFrom",callingClass);
+		intent.putExtra("activity",subtype);
 		startActivity(intent);
 	}
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.activity_brand_query, menu);
+		getMenuInflater().inflate(R.menu.activity_sub_type, menu);
 		return true;
 	}
 

@@ -52,11 +52,6 @@ public class GunInfoActivity extends Activity {
 	        cursor.moveToNext();
 		}
 		
-		//Debugging -- works
-        for(int j = 0; j < stats.size(); j++) {
-        	System.out.println(stats.get(j));
-        }
-        //textView.setText("test");
         textView.setText("Gun Name: " + stats.get(0) + "\n" + "Manufacturer: " + stats.get(1) + "\n" + "Gun Type: " + stats.get(2) + "\n" + 
         		"Gun Sub-Type: " + stats.get(3) + "\n" + "Blowback?: " + stats.get(4) + "\n" + "Propulsion: " + stats.get(5) + "\n" +
         		"FPS: " + stats.get(6) + "\n" + "ROF: " + stats.get(7) + "\n" + 

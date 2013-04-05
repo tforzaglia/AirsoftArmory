@@ -76,5 +76,6 @@
     <string name="title_activity_special">Special</string>
     <string name="title_activity_brand_query">Results</string>
     <string name="title_activity_gun_info">Gun Information</string>
+    <string name="title_activity_sub_type">Select a Sub Type</string>
 
 </resources>
