@@ -147,6 +147,57 @@ public class DatabaseHelper extends SQLiteOpenHelper {
  	   	return cur;
     }
     
+    public Cursor getAllByPropulsion(String propulsiontype) {
+    	
+    	SQLiteDatabase db=this.getReadableDatabase();
+    	
+    	Cursor cur = db.rawQuery("SELECT Name from AirsoftGuns WHERE Propulsion=?", new String [] {propulsiontype});
+ 	   	return cur;
+    }
+    
+    public Cursor getAllByFps(String fps) {
+    	
+    	String high = "0";
+    	String low = "0";
+    	if(fps.equals("Less than 200")){
+    		high = "199";
+    		low = "0";
+    	}
+    	if(fps.equals("200 to 250")){
+    		high = "249";
+    		low = "200";
+    	}
+    	if(fps.equals("250 to 300")){
+    		high = "299";
+    		low = "250";
+    	}
+    	if(fps.equals("300 to 350")){
+    		high = "349";
+    		low = "300";
+    	}
+    	if(fps.equals("350 to 400")){
+    		high = "399";
+    		low = "350";
+    	}
+    	if(fps.equals("400 to 450")){
+    		high = "449";
+    		low = "400";
+    	}
+    	if(fps.equals("450 to 500")){
+    		high = "499";
+    		low = "450";
+    	}
+    	if(fps.equals("Greater than 500")){
+    		high = "1000";
+    		low = "500";
+    	}
+    	
+    	SQLiteDatabase db=this.getReadableDatabase();
+    	
+    	Cursor cur = db.rawQuery("SELECT Name from AirsoftGuns WHERE FPS BETWEEN ? AND ?", new String [] {low, high});
+ 	   	return cur;
+    }
+    
     public Cursor getStatsByName(String gunName) {
     	
     	SQLiteDatabase db=this.getReadableDatabase();

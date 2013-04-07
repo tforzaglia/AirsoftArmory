@@ -41,7 +41,12 @@ public class BrandQueryActivity extends Activity {
         if(calledFrom.equals("type")) {
         	cursor = dbHelper.getAllByType(activity);
         }
-        
+        if(calledFrom.equals("propulsion")) {
+        	cursor = dbHelper.getAllByPropulsion(activity);
+        }
+        if(calledFrom.equals("fps")) {
+        	cursor = dbHelper.getAllByFps(activity);
+        }
 		cursor.moveToFirst();
 			
 		ArrayList<String> gunNames = new ArrayList<String>();

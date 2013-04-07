@@ -1,14 +1,89 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".FpsActivity" >
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:text="@string/hello_world" />
-
-</RelativeLayout>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    	xmlns:tools="http://schemas.android.com/tools"
+    	android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:orientation="vertical" 
+    	android:paddingLeft="16dp"
+    	android:paddingRight="16dp"
+    	android:paddingTop="25dp"
+    	android:paddingBottom="35dp"
+    	android:background="@drawable/background">
+    	
+	    <Button
+        	android:id="@+id/onefps_button"
+        	android:layout_height="50dp"
+        	android:layout_width="match_parent"
+        	android:text="@string/onefps_button" 
+        	android:onClick="goToBrandQuery" 
+        	android:background="@drawable/buttons"/>
+        
+    	<Button
+        	android:id="@+id/twofps_button"
+        	android:layout_height="50dp"
+        	android:layout_width="match_parent"
+        	android:layout_marginTop="35dp"
+        	android:text="@string/twofps_button" 
+        	android:onClick="goToBrandQuery"
+			android:background="@drawable/buttons"/>
+    
+    	<Button
+        	android:id="@+id/threefps_button"
+        	android:layout_height="50dp"
+        	android:layout_width="match_parent"
+        	android:layout_marginTop="35dp"
+        	android:text="@string/threefps_button" 
+        	android:onClick="goToBrandQuery"
+			android:background="@drawable/buttons"/>
+    	
+    	<Button
+        	android:id="@+id/fourfps_button"
+        	android:layout_height="50dp"
+        	android:layout_width="match_parent"
+        	android:layout_marginTop="35dp"
+        	android:text="@string/fourfps_button" 
+        	android:onClick="goToBrandQuery" 
+        	android:background="@drawable/buttons"/>
+        
+    	<Button
+        	android:id="@+id/fivefps_button"
+        	android:layout_height="50dp"
+        	android:layout_width="match_parent"
+        	android:layout_marginTop="35dp"
+        	android:text="@string/fivefps_button" 
+        	android:onClick="goToBrandQuery"
+			android:background="@drawable/buttons"/>
+    
+    	<Button
+        	android:id="@+id/sixfps_button"
+        	android:layout_height="50dp"
+        	android:layout_width="match_parent"
+        	android:layout_marginTop="35dp"
+        	android:text="@string/sixfps_button" 
+        	android:onClick="goToBrandQuery"
+			android:background="@drawable/buttons"/>
+    	
+    	<Button
+        	android:id="@+id/sevenfps_button"
+        	android:layout_height="50dp"
+        	android:layout_width="match_parent"
+        	android:layout_marginTop="35dp"
+        	android:text="@string/sevenfps_button" 
+        	android:onClick="goToBrandQuery"
+			android:background="@drawable/buttons"/>
+    
+    	<Button
+        	android:id="@+id/eightfps_button"
+        	android:layout_height="50dp"
+        	android:layout_width="match_parent"
+        	android:layout_marginTop="35dp"
+        	android:text="@string/eightfps_button" 
+        	android:onClick="goToBrandQuery"
+			android:background="@drawable/buttons"/>
+    	
+    </LinearLayout>
+	
+</ScrollView>

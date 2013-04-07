@@ -2,8 +2,11 @@ package com.example.airsoftarmory;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.content.Intent;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 import android.support.v4.app.NavUtils;
 
 public class PropulsionActivity extends Activity {
@@ -37,5 +40,17 @@ public class PropulsionActivity extends Activity {
 		}
 		return super.onOptionsItemSelected(item);
 	}
-
+	
+	//View parameter is the view that was clicked
+	public void goToBrandQuery(View view) {
+								
+		//respond to button press
+		Intent intent = new Intent(this, BrandQueryActivity.class);
+		Button pressed = (Button)view;
+		String propulsionType = pressed.getText().toString();
+		String callingClass = "propulsion";
+		intent.putExtra("activity",propulsionType);
+		intent.putExtra("calledFrom",callingClass);
+		startActivity(intent);
+	}
 }

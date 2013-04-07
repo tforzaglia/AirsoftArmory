@@ -38,6 +38,17 @@
     <string name="smg_button">SMG</string>
     <string name="pistol_button">Pistol</string>
     <string name="special_button">Special</string>
+    <string name="gas_button">Gas</string>
+    <string name="electric_button">Electric</string>
+    <string name="onefps_button">Less than 200</string>
+    <string name="twofps_button">200 to 250</string>
+    <string name="threefps_button">250 to 300</string>
+    <string name="fourfps_button">300 to 350</string>
+    <string name="fivefps_button">350 to 400</string>
+    <string name="sixfps_button">400 to 450</string>
+    <string name="sevenfps_button">450 to 500</string>
+    <string name="eightfps_button">Greater than 500</string>
+    <string name="spring_button">Spring</string>
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_main_search">Press a button to search</string>
     <string name="title_activity_brand">Select a Brand</string>

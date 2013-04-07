@@ -46,3 +46,6 @@
 -Added new method to DBHelper class to query the db and return all gun names of a given subtype
 -Clicking the name generated from the subtype query uses the same BrandQueryActivity class (to be renamed later)
 -Fixed button display issues
+
+4/7 3:41 AM
+-Set up Propulsion and FPS activities to query the db and return results given the selection
