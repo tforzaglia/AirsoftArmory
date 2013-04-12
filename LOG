@@ -49,3 +49,8 @@
 
 4/7 3:41 AM
 -Set up Propulsion and FPS activities to query the db and return results given the selection
+
+4/12 2:43 AM
+-Set up the main page and toolbar for the My Armory section of the app
+-Removed Custom button from main db search page
+

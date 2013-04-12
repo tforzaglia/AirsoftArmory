@@ -2,8 +2,10 @@ package com.example.airsoftarmory;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.content.Intent;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.support.v4.app.NavUtils;
 
 public class MyArmoryActivity extends Activity {
@@ -36,6 +38,30 @@ public class MyArmoryActivity extends Activity {
 			return true;
 		}
 		return super.onOptionsItemSelected(item);
+	}
+	
+	//View parameter is the view that was clicked
+	public void goToArmorySearch(View view) {
+			
+		//respond to button press
+		//Intent intent = new Intent(this, MainSearchActivity.class);
+		//startActivity(intent);
+	}
+		
+	//View parameter is the view that was clicked
+	public void goToArmoryAdd(View view) {
+			
+		//respond to button press
+		//Intent intent = new Intent(this, MainSearchActivity.class);
+		//startActivity(intent);
+	}
+		
+	//View parameter is the view that was clicked
+	public void goToArmoryRemove(View view) {
+			
+		//respond to button press
+		//Intent intent = new Intent(this, MainSearchActivity.class);
+		//startActivity(intent);
 	}
 
 }

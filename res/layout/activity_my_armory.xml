@@ -1,14 +1,48 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MyArmoryActivity" >
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:text="@string/hello_world" />
-
-</RelativeLayout>
+    android:orientation="vertical" 
+    android:paddingBottom="16dp"
+    android:background="@drawable/background">
+    
+	    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		    xmlns:tools="http://schemas.android.com/tools"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:orientation="horizontal" 
+		    android:paddingBottom="16dp"
+		    android:background="@drawable/background">
+       
+		    <Button
+		        android:id="@+id/brand_button"
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1"
+		        android:background="@drawable/buttons"
+		        android:onClick="goToBrandSearch"
+		        android:text="@string/searcharmory_button" />
+		
+		    <Button
+		        android:id="@+id/type_button"
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1"
+		        android:background="@drawable/buttons"
+		        android:onClick="goToTypeSearch"
+		        android:text="@string/add_button" />
+		
+		    <Button
+		        android:id="@+id/propulsion_button"
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1"
+		        android:background="@drawable/buttons"
+		        android:onClick="goToPropulsionSearch"
+		        android:text="@string/remove_button" />
+    
+    	</LinearLayout>
+    
+</LinearLayout>

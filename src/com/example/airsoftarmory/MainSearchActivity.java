@@ -26,9 +26,6 @@ public class MainSearchActivity extends Activity {
 		
 		View button4 = this.findViewById(R.id.fps_button);
 		button4.getBackground().setAlpha(190);
-		
-		View button5 = this.findViewById(R.id.custom_button);
-		button5.getBackground().setAlpha(190);
 	}
 
 	@Override
@@ -67,14 +64,6 @@ public class MainSearchActivity extends Activity {
 					
 		//respond to button press
 		Intent intent = new Intent(this, FpsActivity.class);
-		startActivity(intent);
-	}
-		
-	//View parameter is the view that was clicked
-	public void goToCustomSearch(View view) {
-					
-		//respond to button press
-		Intent intent = new Intent(this, CustomActivity.class);
 		startActivity(intent);
 	}
 	
