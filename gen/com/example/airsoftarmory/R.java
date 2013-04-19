@@ -13,7 +13,8 @@ public final class R {
     public static final class drawable {
         public static final int background=0x7f020000;
         public static final int buttons=0x7f020001;
-        public static final int ic_launcher=0x7f020002;
+        public static final int green_button=0x7f020002;
+        public static final int ic_launcher=0x7f020003;
     }
     public static final class id {
         public static final int aandk_button=0x7f070000;
@@ -26,13 +27,13 @@ public final class R {
         public static final int dboys_button=0x7f070005;
         public static final int echo1_button=0x7f070006;
         public static final int eightfps_button=0x7f07001e;
-        public static final int electric_button=0x7f070026;
+        public static final int electric_button=0x7f070027;
         public static final int fivefps_button=0x7f07001b;
         public static final int fourfps_button=0x7f07001a;
         public static final int fps_button=0x7f070024;
         public static final int gandg_button=0x7f070007;
         public static final int gandp_button=0x7f070008;
-        public static final int gas_button=0x7f070025;
+        public static final int gas_button=0x7f070026;
         public static final int ics_button=0x7f070009;
         public static final int javelin_button=0x7f07000a;
         public static final int jg_button=0x7f07000b;
@@ -40,22 +41,23 @@ public final class R {
         public static final int kwa_button=0x7f07000c;
         public static final int lancertactical_button=0x7f07000f;
         public static final int lct_button=0x7f07000e;
-        public static final int menu_settings=0x7f07002e;
+        public static final int menu_settings=0x7f07002f;
         public static final int myarmory_button=0x7f070020;
         public static final int onefps_button=0x7f070017;
-        public static final int pistol_button=0x7f07002c;
+        public static final int pistol_button=0x7f07002d;
         public static final int propulsion_button=0x7f070023;
-        public static final int rifle_button=0x7f070028;
+        public static final int rifle_button=0x7f070029;
         public static final int search_button=0x7f07001f;
         public static final int sevenfps_button=0x7f07001d;
         public static final int sixfps_button=0x7f07001c;
-        public static final int smg_button=0x7f07002b;
-        public static final int sniper_button=0x7f07002a;
+        public static final int smg_button=0x7f07002c;
+        public static final int sniper_button=0x7f07002b;
         public static final int socomgear_button=0x7f070011;
-        public static final int special_button=0x7f07002d;
-        public static final int spring_button=0x7f070027;
+        public static final int special_button=0x7f07002e;
+        public static final int spring_button=0x7f070028;
         public static final int src_button=0x7f070010;
-        public static final int support_button=0x7f070029;
+        public static final int support_button=0x7f07002a;
+        public static final int tempButton=0x7f070025;
         public static final int threefps_button=0x7f070019;
         public static final int tokyomarui_button=0x7f070013;
         public static final int tsd_button=0x7f070012;
@@ -72,9 +74,10 @@ public final class R {
         public static final int activity_main=0x7f030004;
         public static final int activity_main_search=0x7f030005;
         public static final int activity_my_armory=0x7f030006;
-        public static final int activity_propulsion=0x7f030007;
-        public static final int activity_sub_type=0x7f030008;
-        public static final int activity_type=0x7f030009;
+        public static final int activity_my_armory_add=0x7f030007;
+        public static final int activity_propulsion=0x7f030008;
+        public static final int activity_sub_type=0x7f030009;
+        public static final int activity_type=0x7f03000a;
     }
     public static final class menu {
         public static final int activity_aandk=0x7f060000;
@@ -101,21 +104,22 @@ public final class R {
         public static final int activity_main=0x7f060015;
         public static final int activity_main_search=0x7f060016;
         public static final int activity_my_armory=0x7f060017;
-        public static final int activity_pistol=0x7f060018;
-        public static final int activity_propulsion=0x7f060019;
-        public static final int activity_rifle=0x7f06001a;
-        public static final int activity_smg=0x7f06001b;
-        public static final int activity_sniper=0x7f06001c;
-        public static final int activity_socomgear=0x7f06001d;
-        public static final int activity_special=0x7f06001e;
-        public static final int activity_src=0x7f06001f;
-        public static final int activity_sub_type=0x7f060020;
-        public static final int activity_support=0x7f060021;
-        public static final int activity_tokyomarui=0x7f060022;
-        public static final int activity_tsd=0x7f060023;
-        public static final int activity_type=0x7f060024;
-        public static final int activity_vfcgb=0x7f060025;
-        public static final int activity_we=0x7f060026;
+        public static final int activity_my_armory_add=0x7f060018;
+        public static final int activity_pistol=0x7f060019;
+        public static final int activity_propulsion=0x7f06001a;
+        public static final int activity_rifle=0x7f06001b;
+        public static final int activity_smg=0x7f06001c;
+        public static final int activity_sniper=0x7f06001d;
+        public static final int activity_socomgear=0x7f06001e;
+        public static final int activity_special=0x7f06001f;
+        public static final int activity_src=0x7f060020;
+        public static final int activity_sub_type=0x7f060021;
+        public static final int activity_support=0x7f060022;
+        public static final int activity_tokyomarui=0x7f060023;
+        public static final int activity_tsd=0x7f060024;
+        public static final int activity_type=0x7f060025;
+        public static final int activity_vfcgb=0x7f060026;
+        public static final int activity_we=0x7f060027;
     }
     public static final class string {
         public static final int aandk_button=0x7f040008;
@@ -186,6 +190,7 @@ public final class R {
         public static final int title_activity_lct=0x7f040048;
         public static final int title_activity_main_search=0x7f040033;
         public static final int title_activity_my_armory=0x7f040035;
+        public static final int title_activity_my_armory_add=0x7f040059;
         public static final int title_activity_pistol=0x7f040054;
         public static final int title_activity_propulsion=0x7f040037;
         public static final int title_activity_rifle=0x7f040050;

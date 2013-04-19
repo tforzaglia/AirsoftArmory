@@ -52,8 +52,8 @@ public class MyArmoryActivity extends Activity {
 	public void goToArmoryAdd(View view) {
 			
 		//respond to button press
-		//Intent intent = new Intent(this, MainSearchActivity.class);
-		//startActivity(intent);
+		Intent intent = new Intent(this, MyArmoryAddActivity.class);
+		startActivity(intent);
 	}
 		
 	//View parameter is the view that was clicked

@@ -54,3 +54,8 @@
 -Set up the main page and toolbar for the My Armory section of the app
 -Removed Custom button from main db search page
 
+4/19 4:13 AM
+-Created activity for adding to my armory
+-Implemented selecting image from gallery and displaying it on the Add to Armory page
+
+
