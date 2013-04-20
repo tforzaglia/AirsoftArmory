@@ -15,4 +15,20 @@
     	android:layout_height="wrap_content">
     </ImageView>	
         
+	<Spinner
+        android:id="@+id/brandSpinner"
+        android:textColor="#fff"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/brand_array"
+        android:prompt="@string/brand_prompt" />    
+        
+	<Button
+		       	android:id="@+id/submitAdd_button"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:background="@drawable/buttons"
+		        android:text="@string/submit_button" />
+    
 </LinearLayout>

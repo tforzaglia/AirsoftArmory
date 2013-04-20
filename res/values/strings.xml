@@ -51,6 +51,7 @@
     <string name="searcharmory_button">Search</string>
     <string name="add_button">Add</string>
     <string name="remove_button">Remove</string>
+    <string name="submit_button">Submit</string>
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_main_search">Press a button to search</string>
     <string name="title_activity_brand">Select a Brand</string>
@@ -91,5 +92,31 @@
     <string name="title_activity_gun_info">Gun Information</string>
     <string name="title_activity_sub_type">Select a Sub Type</string>
     <string name="title_activity_my_armory_add">Add to Armory</string>
+    
+    <string name="brand_prompt">Choose a manufacturer</string>
+ 
+    <string-array name="brand_array">
+        <item>A and K</item>
+        <item>APS</item>
+        <item>ARES</item>
+        <item>CYMA</item>
+        <item>Classic Army</item>
+        <item>Echo 1</item>
+        <item>G and G</item>
+        <item>G and P</item>
+        <item>ICS</item>
+        <item>JAVELIN</item>
+        <item>JG</item>
+        <item>KWA</item>
+        <item>King Arms</item>
+        <item>LCT</item>
+        <item>Lancer Tactical</item>
+        <item>SRC</item>
+        <item>Socom Gear</item>
+        <item>TSD</item>
+        <item>Tokyo Marui</item>
+        <item>VFC/GB</item>
+        <item>WE</item>
+    </string-array>
 
 </resources>

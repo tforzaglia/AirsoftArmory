@@ -58,4 +58,10 @@
 -Created activity for adding to my armory
 -Implemented selecting image from gallery and displaying it on the Add to Armory page
 
+4/20 2:31 AM
+-Started to add to the Add to Armory activity
+-Added a Spinner object to select the brand
+-Added a submit button
+-When submit button is pressed, the curent selected value of all Spinners will be determined and presumably added to a new DB table
+
 

@@ -10,21 +10,25 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.TextView;
+import android.widget.Spinner;
 import android.support.v4.app.NavUtils;
 
 public class MyArmoryAddActivity extends Activity {
 
-	ImageView image;
+	private ImageView image;
 	private static final int PICK_IMAGE = 1;
-	TextView textTargetUri;
+	private Spinner brandSpinner;
+	private Button submit;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
+		super.onCreate(savedInstanceState);		
+		
 		setContentView(R.layout.activity_my_armory_add);
 		
 		addListenerOnButton();
+		addListenerOnSubmitButton();
+		addListenerOnSpinnerItemSelection();	
 	}
 
 	@Override
@@ -54,31 +58,49 @@ public class MyArmoryAddActivity extends Activity {
 	public void addListenerOnButton() {
 		 
 		image = (ImageView) findViewById(R.id.tempButton);
- 
 		image.setOnClickListener(new OnClickListener() {
  
-			@Override
-			public void onClick(View arg0) {
-				//image.setImageResource(R.drawable.android3d);
-				//Intent intent = new Intent(Intent.ACTION_PICK, android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
-				Intent intent = new Intent();
-				intent.setType("image/*");
-				intent.setAction(Intent.ACTION_GET_CONTENT);
-				startActivityForResult(Intent.createChooser(intent, "Select Picture"), PICK_IMAGE);
-
-			}
+		@Override
+		public void onClick(View arg0) {
+			
+			Intent intent = new Intent();
+			intent.setType("image/*");
+			intent.setAction(Intent.ACTION_GET_CONTENT);
+			startActivityForResult(Intent.createChooser(intent, "Select Picture"), PICK_IMAGE);
+		}
 		});	
+	
 	}
 	@Override
 	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-	 // TODO Auto-generated method stub
-	 super.onActivityResult(requestCode, resultCode, data);
+		
+		super.onActivityResult(requestCode, resultCode, data);
 
-	 if (resultCode == RESULT_OK){
-	  Uri targetUri = data.getData();
-	  image.setImageURI(targetUri);
-	  //textTargetUri.setText(targetUri.toString());
-	 }
+		if (resultCode == RESULT_OK){
+			Uri targetUri = data.getData();
+			image.setImageURI(targetUri);
+		}
 	}
-
+	
+	public void addListenerOnSpinnerItemSelection() {
+		
+		brandSpinner = (Spinner) findViewById(R.id.brandSpinner);
+		brandSpinner.setOnItemSelectedListener(new CustomOnItemSelectedListener());
+	 }
+	
+	//get the selected dropdown list value  
+	public void addListenerOnSubmitButton() {
+		
+		brandSpinner = (Spinner) findViewById(R.id.brandSpinner);
+		submit = (Button) findViewById(R.id.submitAdd_button);	 
+		submit.setOnClickListener(new OnClickListener() {
+	 
+		@Override
+		public void onClick(View v) {
+			
+			String str = String.valueOf(brandSpinner.getSelectedItem());
+			System.out.println(str);
+		}
+		});
+	}
 }
