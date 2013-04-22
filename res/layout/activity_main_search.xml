@@ -16,6 +16,7 @@
         android:layout_height="50dp"
         android:layout_width="match_parent"
         android:text="@string/brand_button" 
+        android:textColor="@drawable/button_text_color"
         android:onClick="goToBrandSearch" 
         android:background="@drawable/buttons"/>
         
@@ -25,6 +26,7 @@
         android:layout_width="match_parent"
         android:layout_marginTop="50dp"
         android:text="@string/type_button" 
+        android:textColor="@drawable/button_text_color"
         android:onClick="goToTypeSearch"
 		android:background="@drawable/buttons"/>
     
@@ -34,6 +36,7 @@
         android:layout_width="match_parent"
         android:layout_marginTop="50dp"
         android:text="@string/propulsion_button" 
+        android:textColor="@drawable/button_text_color"
         android:onClick="goToPropulsionSearch"
 		android:background="@drawable/buttons"/>
     
@@ -43,6 +46,7 @@
         android:layout_width="match_parent"
         android:layout_marginTop="50dp"
         android:text="@string/fps_button" 
+        android:textColor="@drawable/button_text_color"
         android:onClick="goToFpsSearch"
 		android:background="@drawable/buttons"/>
     

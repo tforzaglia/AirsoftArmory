@@ -18,6 +18,7 @@
         	android:layout_height="50dp"
         	android:layout_width="match_parent"
         	android:text="@string/onefps_button" 
+        	android:textColor="@drawable/button_text_color"
         	android:onClick="goToBrandQuery" 
         	android:background="@drawable/buttons"/>
         
@@ -27,6 +28,7 @@
         	android:layout_width="match_parent"
         	android:layout_marginTop="35dp"
         	android:text="@string/twofps_button" 
+        	android:textColor="@drawable/button_text_color"
         	android:onClick="goToBrandQuery"
 			android:background="@drawable/buttons"/>
     
@@ -36,6 +38,7 @@
         	android:layout_width="match_parent"
         	android:layout_marginTop="35dp"
         	android:text="@string/threefps_button" 
+        	android:textColor="@drawable/button_text_color"
         	android:onClick="goToBrandQuery"
 			android:background="@drawable/buttons"/>
     	
@@ -45,6 +48,7 @@
         	android:layout_width="match_parent"
         	android:layout_marginTop="35dp"
         	android:text="@string/fourfps_button" 
+        	android:textColor="@drawable/button_text_color"
         	android:onClick="goToBrandQuery" 
         	android:background="@drawable/buttons"/>
         
@@ -54,6 +58,7 @@
         	android:layout_width="match_parent"
         	android:layout_marginTop="35dp"
         	android:text="@string/fivefps_button" 
+        	android:textColor="@drawable/button_text_color"
         	android:onClick="goToBrandQuery"
 			android:background="@drawable/buttons"/>
     
@@ -63,6 +68,7 @@
         	android:layout_width="match_parent"
         	android:layout_marginTop="35dp"
         	android:text="@string/sixfps_button" 
+        	android:textColor="@drawable/button_text_color"
         	android:onClick="goToBrandQuery"
 			android:background="@drawable/buttons"/>
     	
@@ -72,6 +78,7 @@
         	android:layout_width="match_parent"
         	android:layout_marginTop="35dp"
         	android:text="@string/sevenfps_button" 
+        	android:textColor="@drawable/button_text_color"
         	android:onClick="goToBrandQuery"
 			android:background="@drawable/buttons"/>
     
@@ -81,6 +88,7 @@
         	android:layout_width="match_parent"
         	android:layout_marginTop="35dp"
         	android:text="@string/eightfps_button" 
+        	android:textColor="@drawable/button_text_color"
         	android:onClick="goToBrandQuery"
 			android:background="@drawable/buttons"/>
     	

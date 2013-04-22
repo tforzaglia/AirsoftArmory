@@ -15,7 +15,8 @@
         android:id="@+id/search_button"
         android:layout_height="100dp"
         android:layout_width="match_parent"
-        android:text="@string/search_button" 
+        android:text="@string/search_button"
+        android:textColor="@drawable/button_text_color" 
         android:onClick="goToMainSearch" 
         android:background="@drawable/buttons"/>
         
@@ -25,6 +26,7 @@
         android:layout_width="match_parent"
         android:layout_marginTop="75dp"
         android:text="@string/myarmory_button" 
+        android:textColor="@drawable/button_text_color"
         android:onClick="goToMyArmory"
 		android:background="@drawable/buttons"/>
     

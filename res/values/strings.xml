@@ -94,8 +94,21 @@
     <string name="title_activity_my_armory_add">Add to Armory</string>
     
     <string name="brand_prompt">Choose a manufacturer</string>
+    <string name="model_prompt">Enter the model type</string>
+    <string name="fps_prompt">Choose an FPS range</string>
+    <string name="rof_prompt">Choose an ROF range</string>
+    <string name="type_prompt">Choose a gun type</string>
+    <string name="blowback_prompt">Choose a propulsion type</string>
+    <string name="propulsion_prompt">Choose blowback. Yes or No</string>
+    <string name="weight_prompt">Enter the weight</string>
+    <string name="barrellength_prompt">Choose an inner barrel length</string>
+    <string name="barreldiameter_prompt">Choose an inner barrel diameter</string>
+    <string name="upgrades_prompt">Enter any upgrades</string>
+    <string name="attachments_prompt">Enter any attachments</string>
+    <string name="additionalinfo_prompt">Enter any additional info</string>
  
     <string-array name="brand_array">
+        <item>Select a manufacturer</item>
         <item>A and K</item>
         <item>APS</item>
         <item>ARES</item>
@@ -117,6 +130,89 @@
         <item>Tokyo Marui</item>
         <item>VFC/GB</item>
         <item>WE</item>
+        <item>NA</item>
+    </string-array>
+    
+    <string-array name="fps_array">
+        <item>Select an FPS range</item>
+        <item>Less than 200</item>
+        <item>200 to 249</item>
+        <item>250 to 299</item>
+        <item>300 to 349</item>
+        <item>350 to 399</item>
+        <item>400 to 449</item>
+        <item>450 to 499</item>
+        <item>Greater than 500</item>
+        <item>NA</item>
+    </string-array>
+    
+    <string-array name="rof_array">
+        <item>Select an ROF range</item>
+        <item>Less than 10</item>
+        <item>10 to 14</item>
+        <item>15 to 19</item>
+        <item>20 to 24</item>
+        <item>25 to 29</item>
+        <item>30 to 34</item>
+        <item>35 to 39</item>
+        <item>Greater than 40</item>
+        <item>NA</item>
+    </string-array>
+    
+    <string-array name="type_array">
+        <item>Select a gun type</item>
+        <item>Pistol</item>
+        <item>SMG</item>
+        <item>Shotgun</item>
+        <item>Sniper</item>
+        <item>Rifle</item>
+        <item>Support</item>
+        <item>NA</item>
+    </string-array>
+    
+    <string-array name="propulsion_array">
+        <item>Select a propulsion type</item>
+        <item>Gas</item>
+        <item>Electric</item>
+        <item>Spring</item>
+        <item>NA</item>
+    </string-array>
+    
+    <string-array name="blowback_array">
+        <item>Blowback?</item>
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+    
+    <string-array name="barrellength_array">
+        <item>Select an inner barrel length</item>
+        <item>82mm</item>
+        <item>92mm</item>
+        <item>95mm</item>
+        <item>97mm</item>
+        <item>112mm</item>
+        <item>229mm</item>
+        <item>247mm</item>
+        <item>300mm</item>
+        <item>363mm</item>
+        <item>407mm</item>
+        <item>455mm</item>
+        <item>499mm</item>
+        <item>509mm</item>
+        <item>650mm</item>
+        <item>NA</item>
+    </string-array>
+    
+    <string-array name="barreldiameter_array">
+        <item>Select an inner barrel diameter</item>
+        <item>6.00mm</item>
+        <item>6.01mm</item>
+        <item>6.02mm</item>
+        <item>6.03mm</item>
+        <item>6.04mm</item>
+        <item>6.05mm</item>
+        <item>6.23mm</item>
+        <item>NA</item>
     </string-array>
 
 </resources>

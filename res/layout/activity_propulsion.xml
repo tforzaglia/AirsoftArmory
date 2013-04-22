@@ -18,6 +18,7 @@
         	android:layout_height="50dp"
         	android:layout_width="match_parent"
         	android:text="@string/gas_button" 
+        	android:textColor="@drawable/button_text_color"
         	android:onClick="goToBrandQuery" 
         	android:background="@drawable/buttons"/>
         
@@ -27,6 +28,7 @@
         	android:layout_width="match_parent"
         	android:layout_marginTop="35dp"
         	android:text="@string/electric_button" 
+        	android:textColor="@drawable/button_text_color"
         	android:onClick="goToBrandQuery"
 			android:background="@drawable/buttons"/>
     
@@ -36,6 +38,7 @@
         	android:layout_width="match_parent"
         	android:layout_marginTop="35dp"
         	android:text="@string/spring_button" 
+        	android:textColor="@drawable/button_text_color"
         	android:onClick="goToBrandQuery"
 			android:background="@drawable/buttons"/>
     	

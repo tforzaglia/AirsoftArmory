@@ -64,4 +64,6 @@
 -Added a submit button
 -When submit button is pressed, the curent selected value of all Spinners will be determined and presumably added to a new DB table
 
-
+4/22 4:16 AM
+-Changed button color from white to black (text is now white)
+-Added the remaining spinners and edit text fields to the add to armory view

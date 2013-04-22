@@ -22,6 +22,7 @@
 		        android:layout_height="wrap_content"
 		        android:layout_weight="1"
 		        android:background="@drawable/buttons"
+		        android:textColor="@drawable/button_text_color"
 		        android:onClick="goToArmorySearch"
 		        android:text="@string/searcharmory_button" />
 		
@@ -31,6 +32,7 @@
 		        android:layout_height="wrap_content"
 		        android:layout_weight="1"
 		        android:background="@drawable/buttons"
+		        android:textColor="@drawable/button_text_color"
 		        android:onClick="goToArmoryAdd"
 		        android:text="@string/add_button" />
 		
@@ -40,6 +42,7 @@
 		        android:layout_height="wrap_content"
 		        android:layout_weight="1"
 		        android:background="@drawable/buttons"
+		        android:textColor="@drawable/button_text_color"
 		        android:onClick="goToArmoryDelete"
 		        android:text="@string/remove_button" />
     

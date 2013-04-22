@@ -1,34 +1,112 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical" 
-    android:paddingBottom="16dp"
-    android:background="@drawable/background">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
     
-    <ImageView
-    	android:id="@+id/tempButton"
-    	android:src="@drawable/green_button"
-    	android:layout_width="wrap_content"
-    	android:layout_height="wrap_content">
-    </ImageView>	
-        
-	<Spinner
-        android:id="@+id/brandSpinner"
-        android:textColor="#fff"
-        android:background="#fff"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:entries="@array/brand_array"
-        android:prompt="@string/brand_prompt" />    
-        
-	<Button
-		       	android:id="@+id/submitAdd_button"
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		    xmlns:tools="http://schemas.android.com/tools"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:orientation="vertical" 
+		    android:paddingLeft="16dp"
+		    android:paddingRight="16dp"
+		    android:paddingTop="16dp"
+		   	android:paddingBottom="16dp">
+		    
+		    <ImageView
+		    	android:id="@+id/tempButton"
+		    	android:src="@drawable/green_button"
+		    	android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content">
+		    </ImageView>	
+		        
+			<Spinner
+		        android:id="@+id/brandSpinner"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:prompt="@string/brand_prompt"
+		        android:entries="@array/brand_array"/>  
+		        
+			<EditText android:id="@+id/model_textField"
 		        android:layout_width="wrap_content"
 		        android:layout_height="wrap_content"
-		        android:background="@drawable/buttons"
-		        android:text="@string/submit_button" />
-    
-</LinearLayout>
+		        android:hint="@string/model_prompt" />
+			
+			<Spinner
+		        android:id="@+id/fpsSpinner"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:entries="@array/fps_array"
+		        android:prompt="@string/fps_prompt" />  
+		        
+			<Spinner
+		        android:id="@+id/rofSpinner"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:entries="@array/rof_array"
+		        android:prompt="@string/rof_prompt" />  
+		        
+			<Spinner
+		        android:id="@+id/typeSpinner"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:entries="@array/type_array"
+		        android:prompt="@string/type_prompt" />  
+		        
+			<Spinner
+		        android:id="@+id/propulsionSpinner"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:entries="@array/propulsion_array"
+		        android:prompt="@string/propulsion_prompt" />  
+		        
+			<Spinner
+		        android:id="@+id/blowbackSpinner"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:entries="@array/blowback_array"
+		        android:prompt="@string/blowback_prompt" />  
+		        
+			<EditText android:id="@+id/weight_textField"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:hint="@string/weight_prompt" />
+		        
+			<Spinner
+		        android:id="@+id/barrellengthSpinner"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:entries="@array/barrellength_array"
+		        android:prompt="@string/barrellength_prompt" />  
+		        
+			<Spinner
+		        android:id="@+id/barreldiameterSpinner"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:entries="@array/barreldiameter_array"
+		        android:prompt="@string/barreldiameter_prompt" /> 
+		        
+			<EditText android:id="@+id/upgrades_textField"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:hint="@string/upgrades_prompt" />
+			
+			<EditText android:id="@+id/attachments_textField"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:hint="@string/attachments_prompt" />
+			
+			<EditText android:id="@+id/additionalinfo_textField"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:hint="@string/additionalinfo_prompt" />
+		        
+			<Button
+			    android:id="@+id/submitAdd_button"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:background="@drawable/buttons"
+				android:textColor="@drawable/button_text_color"
+				android:text="@string/submit_button" />
+		</LinearLayout>
+</ScrollView>

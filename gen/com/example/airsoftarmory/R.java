@@ -9,20 +9,34 @@ package com.example.airsoftarmory;
 
 public final class R {
     public static final class array {
+        public static final int barreldiameter_array=0x7f050007;
+        public static final int barrellength_array=0x7f050006;
+        public static final int blowback_array=0x7f050005;
         public static final int brand_array=0x7f050000;
+        public static final int fps_array=0x7f050001;
+        public static final int propulsion_array=0x7f050004;
+        public static final int rof_array=0x7f050002;
+        public static final int type_array=0x7f050003;
     }
     public static final class attr {
     }
     public static final class drawable {
         public static final int background=0x7f020000;
-        public static final int buttons=0x7f020001;
-        public static final int green_button=0x7f020002;
-        public static final int ic_launcher=0x7f020003;
+        public static final int button_text_color=0x7f020001;
+        public static final int buttons=0x7f020002;
+        public static final int green_button=0x7f020003;
+        public static final int ic_launcher=0x7f020004;
+        public static final int spinners=0x7f020005;
     }
     public static final class id {
         public static final int aandk_button=0x7f080000;
+        public static final int additionalinfo_textField=0x7f080032;
         public static final int aps_button=0x7f080001;
         public static final int ares_button=0x7f080002;
+        public static final int attachments_textField=0x7f080031;
+        public static final int barreldiameterSpinner=0x7f08002f;
+        public static final int barrellengthSpinner=0x7f08002e;
+        public static final int blowbackSpinner=0x7f08002c;
         public static final int brandSpinner=0x7f080026;
         public static final int brand_button=0x7f080021;
         public static final int brand_layout=0x7f080016;
@@ -31,13 +45,14 @@ public final class R {
         public static final int dboys_button=0x7f080005;
         public static final int echo1_button=0x7f080006;
         public static final int eightfps_button=0x7f08001e;
-        public static final int electric_button=0x7f080029;
+        public static final int electric_button=0x7f080035;
         public static final int fivefps_button=0x7f08001b;
         public static final int fourfps_button=0x7f08001a;
+        public static final int fpsSpinner=0x7f080028;
         public static final int fps_button=0x7f080024;
         public static final int gandg_button=0x7f080007;
         public static final int gandp_button=0x7f080008;
-        public static final int gas_button=0x7f080028;
+        public static final int gas_button=0x7f080034;
         public static final int ics_button=0x7f080009;
         public static final int javelin_button=0x7f08000a;
         public static final int jg_button=0x7f08000b;
@@ -45,31 +60,37 @@ public final class R {
         public static final int kwa_button=0x7f08000c;
         public static final int lancertactical_button=0x7f08000f;
         public static final int lct_button=0x7f08000e;
-        public static final int menu_settings=0x7f080031;
+        public static final int menu_settings=0x7f08003d;
+        public static final int model_textField=0x7f080027;
         public static final int myarmory_button=0x7f080020;
         public static final int onefps_button=0x7f080017;
-        public static final int pistol_button=0x7f08002f;
+        public static final int pistol_button=0x7f08003b;
+        public static final int propulsionSpinner=0x7f08002b;
         public static final int propulsion_button=0x7f080023;
-        public static final int rifle_button=0x7f08002b;
+        public static final int rifle_button=0x7f080037;
+        public static final int rofSpinner=0x7f080029;
         public static final int search_button=0x7f08001f;
         public static final int sevenfps_button=0x7f08001d;
         public static final int sixfps_button=0x7f08001c;
-        public static final int smg_button=0x7f08002e;
-        public static final int sniper_button=0x7f08002d;
+        public static final int smg_button=0x7f08003a;
+        public static final int sniper_button=0x7f080039;
         public static final int socomgear_button=0x7f080011;
-        public static final int special_button=0x7f080030;
-        public static final int spring_button=0x7f08002a;
+        public static final int special_button=0x7f08003c;
+        public static final int spring_button=0x7f080036;
         public static final int src_button=0x7f080010;
-        public static final int submitAdd_button=0x7f080027;
-        public static final int support_button=0x7f08002c;
+        public static final int submitAdd_button=0x7f080033;
+        public static final int support_button=0x7f080038;
         public static final int tempButton=0x7f080025;
         public static final int threefps_button=0x7f080019;
         public static final int tokyomarui_button=0x7f080013;
         public static final int tsd_button=0x7f080012;
         public static final int twofps_button=0x7f080018;
+        public static final int typeSpinner=0x7f08002a;
         public static final int type_button=0x7f080022;
+        public static final int upgrades_textField=0x7f080030;
         public static final int vfcgb_button=0x7f080014;
         public static final int we_button=0x7f080015;
+        public static final int weight_textField=0x7f08002d;
     }
     public static final class layout {
         public static final int activity_brand=0x7f030000;
@@ -129,9 +150,14 @@ public final class R {
     public static final class string {
         public static final int aandk_button=0x7f040008;
         public static final int add_button=0x7f040030;
+        public static final int additionalinfo_prompt=0x7f040067;
         public static final int app_name=0x7f040000;
         public static final int aps_button=0x7f040009;
         public static final int ares_button=0x7f04000a;
+        public static final int attachments_prompt=0x7f040066;
+        public static final int barreldiameter_prompt=0x7f040064;
+        public static final int barrellength_prompt=0x7f040063;
+        public static final int blowback_prompt=0x7f040060;
         public static final int brand_button=0x7f040004;
         public static final int brand_prompt=0x7f04005b;
         public static final int classicarmy_button=0x7f04000c;
@@ -143,6 +169,7 @@ public final class R {
         public static final int fivefps_button=0x7f04002b;
         public static final int fourfps_button=0x7f04002a;
         public static final int fps_button=0x7f040007;
+        public static final int fps_prompt=0x7f04005d;
         public static final int gandg_button=0x7f04000f;
         public static final int gandp_button=0x7f040010;
         public static final int gas_button=0x7f040024;
@@ -155,12 +182,15 @@ public final class R {
         public static final int lancertactical_button=0x7f040017;
         public static final int lct_button=0x7f040016;
         public static final int menu_settings=0x7f040001;
+        public static final int model_prompt=0x7f04005c;
         public static final int myarmory_button=0x7f040003;
         public static final int onefps_button=0x7f040027;
         public static final int pistol_button=0x7f040022;
         public static final int propulsion_button=0x7f040006;
+        public static final int propulsion_prompt=0x7f040061;
         public static final int remove_button=0x7f040031;
         public static final int rifle_button=0x7f04001e;
+        public static final int rof_prompt=0x7f04005e;
         public static final int search_button=0x7f040002;
         public static final int searcharmory_button=0x7f04002f;
         public static final int sevenfps_button=0x7f04002d;
@@ -217,8 +247,11 @@ public final class R {
         public static final int tsd_button=0x7f04001a;
         public static final int twofps_button=0x7f040028;
         public static final int type_button=0x7f040005;
+        public static final int type_prompt=0x7f04005f;
+        public static final int upgrades_prompt=0x7f040065;
         public static final int vfcgb_button=0x7f04001c;
         public static final int we_button=0x7f04001d;
+        public static final int weight_prompt=0x7f040062;
     }
     public static final class style {
         /** 
