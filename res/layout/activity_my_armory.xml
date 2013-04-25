@@ -1,51 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical" 
-    android:paddingBottom="16dp"
-    android:background="@drawable/background">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
     
-	    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
 		    xmlns:tools="http://schemas.android.com/tools"
+		    android:id="@+id/ll"
 		    android:layout_width="match_parent"
 		    android:layout_height="match_parent"
-		    android:orientation="horizontal" 
+		    android:orientation="vertical" 
 		    android:paddingBottom="16dp"
 		    android:background="@drawable/background">
-       
-		    <Button
-		        android:id="@+id/brand_button"
-		        android:layout_width="0dp"
-		        android:layout_height="wrap_content"
-		        android:layout_weight="1"
-		        android:background="@drawable/buttons"
-		        android:textColor="@drawable/button_text_color"
-		        android:onClick="goToArmorySearch"
-		        android:text="@string/searcharmory_button" />
-		
-		    <Button
-		        android:id="@+id/type_button"
-		        android:layout_width="0dp"
-		        android:layout_height="wrap_content"
-		        android:layout_weight="1"
-		        android:background="@drawable/buttons"
-		        android:textColor="@drawable/button_text_color"
-		        android:onClick="goToArmoryAdd"
-		        android:text="@string/add_button" />
-		
-		    <Button
-		        android:id="@+id/propulsion_button"
-		        android:layout_width="0dp"
-		        android:layout_height="wrap_content"
-		        android:layout_weight="1"
-		        android:background="@drawable/buttons"
-		        android:textColor="@drawable/button_text_color"
-		        android:onClick="goToArmoryDelete"
-		        android:text="@string/remove_button" />
-    
-    	</LinearLayout>
-    
-</LinearLayout>
+		    
+			    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				    xmlns:tools="http://schemas.android.com/tools"
+				    android:layout_width="match_parent"
+				    android:layout_height="match_parent"
+				    android:orientation="horizontal" 
+				    android:paddingBottom="16dp"	
+				    android:gravity="top"			    
+				    android:background="@drawable/background">
+		       
+				    <Button
+				        android:id="@+id/search_button"
+				        android:layout_width="0dp"
+				        android:layout_height="wrap_content"
+				        android:layout_weight="1"
+				        android:background="@drawable/buttons"
+				        android:textColor="@drawable/button_text_color"
+				        android:onClick="goToArmorySearch"
+				        android:text="@string/searcharmory_button" />
+				
+				    <Button
+				        android:id="@+id/add_button"
+				        android:layout_width="0dp"
+				        android:layout_height="wrap_content"
+				        android:layout_weight="1"
+				        android:background="@drawable/buttons"
+				        android:textColor="@drawable/button_text_color"
+				        android:onClick="goToArmoryAdd"
+				        android:text="@string/add_button" />
+				
+				    <Button
+				        android:id="@+id/remove_button"
+				        android:layout_width="0dp"
+				        android:layout_height="wrap_content"
+				        android:layout_weight="1"
+				        android:background="@drawable/buttons"
+				        android:textColor="@drawable/button_text_color"
+				        android:onClick="goToArmoryDelete"
+				        android:text="@string/remove_button" />
+		    
+		    	</LinearLayout>
+		    
+		</LinearLayout>
+</ScrollView>

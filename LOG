@@ -67,3 +67,10 @@
 4/22 4:16 AM
 -Changed button color from white to black (text is now white)
 -Added the remaining spinners and edit text fields to the add to armory view
+
+4/25 4:26 AM
+-Added functionality to add guns to My Armory
+	--Entries are saved in a new DB table
+--When you go to My Armory, the names of the guns you have added are displayed
+
+

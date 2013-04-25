@@ -32,12 +32,14 @@ public class MyArmoryAddActivity extends Activity {
 	private EditText attachmentsEditText;
 	private EditText additionalinfoEditText;
 	private Button submit;
+	private DatabaseHelper dbHelper;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);		
 		
 		setContentView(R.layout.activity_my_armory_add);
+		dbHelper = new DatabaseHelper(this);
 		
 		addListenerOnButton();
 		addListenerOnSubmitButton();
@@ -165,6 +167,8 @@ public class MyArmoryAddActivity extends Activity {
 								"attachments: " + attachments + "\n" +
 								"addtional info: " + additionalinfo + "\n" 
 					);
+			
+			dbHelper.insertRow(manufacturer, model, fps, rof, propulsion, blowback, weight, barrellength, barreldiameter, upgrades, attachments, additionalinfo);
 		}
 		});
 	}

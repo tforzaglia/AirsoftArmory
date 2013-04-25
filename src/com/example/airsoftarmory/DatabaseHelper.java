@@ -4,6 +4,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
+import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.SQLException;
@@ -204,6 +205,38 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     	
     	Cursor cur = db.rawQuery("SELECT * from AirsoftGuns WHERE Name=?", new String [] {gunName});
  	   	return cur;
+    }
+    
+    public Cursor getAllInArmory() {
+    	
+    	SQLiteDatabase db=this.getReadableDatabase();
+    	
+    	Cursor cur = db.rawQuery("SELECT Model from MyArmory", new String [] {});
+ 	   	return cur;
+    }
+    
+    public void insertRow(String brand, String model, String fps, String rof, String propulsion, String blowback, String weight, String length, 
+    		String diameter, String upgrades, String attachments, String info) {
+    	
+    	SQLiteDatabase db=this.getWritableDatabase();
+    	ContentValues cv=new ContentValues();
+    	
+    	cv.put("Brand", brand);
+    	cv.put("Model", model);
+    	cv.put("FPS", fps);
+    	cv.put("ROF", rof);
+    	cv.put("Propulsion", propulsion);
+    	cv.put("Blowback", blowback);
+    	cv.put("Weight", weight);
+    	cv.put("BarrelLength", length);
+    	cv.put("BarrelDiameter", diameter);
+    	cv.put("Upgrades", upgrades);
+    	cv.put("Attachments", attachments);
+    	cv.put("AdditionalInfo", info);
+    	
+    	db.insert("MyArmory", "_id", cv);
+    	
+    	db.close();
     }
 
  
