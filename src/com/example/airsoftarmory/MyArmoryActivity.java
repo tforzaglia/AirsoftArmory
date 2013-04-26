@@ -101,8 +101,8 @@ public class MyArmoryActivity extends Activity {
 	public void goToArmoryRemove(View view) {
 			
 		//respond to button press
-		//Intent intent = new Intent(this, MainSearchActivity.class);
-		//startActivity(intent);
+		Intent intent = new Intent(this, MyArmoryRemoveActivity.class);
+		startActivity(intent);
 	}
 
 }

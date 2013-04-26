@@ -330,6 +330,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.airsoftarmory.MyArmoryActivity" />
         </activity>
+        <activity
+            android:name="com.example.airsoftarmory.MyArmoryRemoveActivity"
+            android:label="@string/title_activity_my_armory_remove"
+            android:parentActivityName="com.example.airsoftarmory.MyArmoryActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.airsoftarmory.MyArmoryActivity" />
+        </activity>
     </application>
 
 </manifest>

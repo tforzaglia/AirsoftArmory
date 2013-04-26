@@ -49,10 +49,9 @@
 				        android:layout_weight="1"
 				        android:background="@drawable/buttons"
 				        android:textColor="@drawable/button_text_color"
-				        android:onClick="goToArmoryDelete"
+				        android:onClick="goToArmoryRemove"
 				        android:text="@string/remove_button" />
 		    
-		    	</LinearLayout>
-		    
+		    	</LinearLayout>		    
 		</LinearLayout>
 </ScrollView>

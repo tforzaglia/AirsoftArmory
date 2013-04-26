@@ -104,9 +104,10 @@ public final class R {
         public static final int activity_main_search=0x7f030005;
         public static final int activity_my_armory=0x7f030006;
         public static final int activity_my_armory_add=0x7f030007;
-        public static final int activity_propulsion=0x7f030008;
-        public static final int activity_sub_type=0x7f030009;
-        public static final int activity_type=0x7f03000a;
+        public static final int activity_my_armory_remove=0x7f030008;
+        public static final int activity_propulsion=0x7f030009;
+        public static final int activity_sub_type=0x7f03000a;
+        public static final int activity_type=0x7f03000b;
     }
     public static final class menu {
         public static final int activity_aandk=0x7f070000;
@@ -134,21 +135,22 @@ public final class R {
         public static final int activity_main_search=0x7f070016;
         public static final int activity_my_armory=0x7f070017;
         public static final int activity_my_armory_add=0x7f070018;
-        public static final int activity_pistol=0x7f070019;
-        public static final int activity_propulsion=0x7f07001a;
-        public static final int activity_rifle=0x7f07001b;
-        public static final int activity_smg=0x7f07001c;
-        public static final int activity_sniper=0x7f07001d;
-        public static final int activity_socomgear=0x7f07001e;
-        public static final int activity_special=0x7f07001f;
-        public static final int activity_src=0x7f070020;
-        public static final int activity_sub_type=0x7f070021;
-        public static final int activity_support=0x7f070022;
-        public static final int activity_tokyomarui=0x7f070023;
-        public static final int activity_tsd=0x7f070024;
-        public static final int activity_type=0x7f070025;
-        public static final int activity_vfcgb=0x7f070026;
-        public static final int activity_we=0x7f070027;
+        public static final int activity_my_armory_remove=0x7f070019;
+        public static final int activity_pistol=0x7f07001a;
+        public static final int activity_propulsion=0x7f07001b;
+        public static final int activity_rifle=0x7f07001c;
+        public static final int activity_smg=0x7f07001d;
+        public static final int activity_sniper=0x7f07001e;
+        public static final int activity_socomgear=0x7f07001f;
+        public static final int activity_special=0x7f070020;
+        public static final int activity_src=0x7f070021;
+        public static final int activity_sub_type=0x7f070022;
+        public static final int activity_support=0x7f070023;
+        public static final int activity_tokyomarui=0x7f070024;
+        public static final int activity_tsd=0x7f070025;
+        public static final int activity_type=0x7f070026;
+        public static final int activity_vfcgb=0x7f070027;
+        public static final int activity_we=0x7f070028;
     }
     public static final class string {
         public static final int aandk_button=0x7f040008;
@@ -231,6 +233,7 @@ public final class R {
         public static final int title_activity_main_search=0x7f040034;
         public static final int title_activity_my_armory=0x7f040036;
         public static final int title_activity_my_armory_add=0x7f04005a;
+        public static final int title_activity_my_armory_remove=0x7f040068;
         public static final int title_activity_pistol=0x7f040055;
         public static final int title_activity_propulsion=0x7f040038;
         public static final int title_activity_rifle=0x7f040051;

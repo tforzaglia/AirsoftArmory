@@ -238,6 +238,13 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     	
     	db.close();
     }
+    
+    public void deleteRow(String name) {
+    	
+    	SQLiteDatabase db=this.getWritableDatabase();
+    	db.delete("MyArmory", "Model=?", new String []{name});
+    	db.close();
+    }
 
  
 	@Override
